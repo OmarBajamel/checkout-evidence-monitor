@@ -1,0 +1,48 @@
+name: Explicit manual local-style checks
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: Type TEST APPROVED to authorize this remote run independently
+        required: true
+        type: string
+      source_sha:
+        description: Exact current commit SHA to check
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  offline:
+    if: inputs.approval == 'TEST APPROVED' && inputs.source_sha == github.sha
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      APPROVED_SHA: ${{ inputs.source_sha }}
+      PYTHONDONTWRITEBYTECODE: '1'
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+    steps:
+      - name: Obtain exactly the selected public commit without third-party actions
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$APPROVED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          git init source
+          cd source
+          git -c protocol.file.allow=never fetch --depth=1 "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" "$APPROVED_SHA"
+          git checkout --detach FETCH_HEAD
+      - name: Install reviewed binary dependencies and record explicit scope
+        working-directory: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3.12 -m venv .venv
+          .venv/bin/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-linux.lock
+          .venv/bin/python tools/authorize_local.py --instruction 'TEST APPROVED' --profile OFFLINE
+      - name: Execute only offline cases explicitly selected for this run
+        working-directory: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          export CEM_TEST_SESSION="$PWD/.cem-private/test-session.json"
+          .venv/bin/python -m pytest tests/unit tests/security tests/integration -ra

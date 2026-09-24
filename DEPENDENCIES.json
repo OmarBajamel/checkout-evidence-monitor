@@ -1,0 +1,4085 @@
+{
+  "schema_version": "1.0",
+  "status": "LOCKED_ARCHIVE_AND_SOURCE_REVIEWED_NOT_RUNTIME_VERIFIED",
+  "packages": [
+    {
+      "ecosystem": "npm",
+      "name": "@adobe/css-tools",
+      "version": "4.5.0",
+      "license": "MIT",
+      "integrity": "sha512-6OzddxPio9UiWTCemp4N8cYLV2ZN1ncRnV1cVGtve7dhPOtRkleRyx32GQCYSwDYgaHU3USMm84tNsvKzRCa1Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-adobe__css-tools-4.5.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/code-frame",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__code-frame-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/compat-data",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-locTkQyKvwIEgBzVrn8693ebc97F2U8ZHjbXwDXJ5Fn2TCpNwTlKcaKLkdHop5c/icOFE7qt7Q9JC5hnKNa6Gg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__compat-data-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__core-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/generator",
+      "version": "7.29.8",
+      "license": "MIT",
+      "integrity": "sha512-gZbepsdh3WDtgZKWL+vTPh71LSBrm/Y4/QDZBVCcYfmeTEEuoOYwlSy+G1StfJg+/Zy550u/3TATbm7qDbbMtg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__generator-7.29.8-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-compilation-targets",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-compilation-targets-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lru-cache",
+      "version": "5.1.1",
+      "license": "ISC",
+      "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lru-cache-5.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-globals",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-globals-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-module-imports",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-ejHwrQQYcm9xnTivShn2IDOlIzInN34AXskvq9QicvCtEzq1Vzclu/tKF8Jq1Cg8JG2GL6/EmjgsCT7lXepE3g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-module-imports-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-module-transforms",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-UPUVSyXbOh627KiCIGQSgwWzGeBKLkaJ9PJEdrngIwMSzxLR4jS4+f1f1jb7VzBbg8nFLaYotvVPFCTqdrmTAg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-module-transforms-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-Pb5ijPrZ89GDH8223L4UP8i6QApWxs04RbPQJTeWDV0/keR2E36MeKnyr6LYmUUvqRRI+Iv87SuF1W6ErINzYw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-string-parser-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-validator-identifier-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helper-validator-option",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-N9ZErrD+yW5geCDtBqnOoxmR8+tNKiGuxKlDpuJxfsqpa2dFcexaziGAE/qoHLiDDreVNMupxGmSoNlyvsA3gw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helper-validator-option-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/helpers",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-1k2lAGRMfHTcwuNYcCNUmaUffmQv8KWMfh2iJUUeRlwlwH4FdNG7mfPI10NPfLHJFThE4Tyr4mv7kTNZOiPuBg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__helpers-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/parser",
+      "version": "7.29.9",
+      "license": "MIT",
+      "integrity": "sha512-CjXrNHTnvqBVqHgdBysY3vk2T8tpJHb5/RMeHJBTyVa9xgugCB0CJTx/3oO8RV2QRQP391RWpB7D6hLjm8V9uA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__parser-7.29.9-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/runtime",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__runtime-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/template",
+      "version": "7.29.7",
+      "license": "MIT",
+      "integrity": "sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__template-7.29.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/traverse",
+      "version": "7.29.8",
+      "license": "MIT",
+      "integrity": "sha512-I5z7H3bf/41ktsNVLtpN0wAa336HkqIHQ5BuPLEhTkt1jVSyZpeNKIzTgEWmlxjdg81R0IgUCcaE+Ok3NvrfZg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__traverse-7.29.8-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "license": "MIT",
+      "integrity": "sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-babel__types-7.29.8-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/core",
+      "version": "1.9.2",
+      "license": "MIT",
+      "integrity": "sha512-UC+ZhH3XtczQYfOlu3lNEkdW/p4dsJ1r/bP7H8+rhao3TTTMO1ATq/4DdIi23XuGoFY+Cz0JmCbdVl0hz9jZcA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/runtime",
+      "version": "1.9.2",
+      "license": "MIT",
+      "integrity": "sha512-3U4+MIWHImeyu1wnmVygh5WlgfYDtyf0k8AbLhMFxOipihf6nrWC4syIm/SwEeec0mNSafiiNnMJwbza/Is6Lw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.1",
+      "license": "MIT",
+      "integrity": "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/android-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-kXXoiPVVGQcnIYGOeaovwOURpniDBpSq4A03qkQ+BMQqtGG6HYap3xne9C1O1yo4TR3qxlCX5IqqmX6fFo2Lqg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/android-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-5YfKeeI8qWfBZIX+u2xZC3Zlb3Os/gLS2sbEKM+I4ZOcsWmHS2WLysCcQZDAFRslDUU5Oiq44gf6PYN1vGwG5A==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/android-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-O387ite7SzUyCcy3JQX4P4bLtEA7bLLkx+esve5JHnyYfNTxcVpXZo9jhdB0lTKN44gztELTdU7nS8Nr16Fs1Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-n4KqkOQrraxHJcgjM1RvwbigfQKIKJVpM7xp+KsxiyUSrRdIXnt73VhrPAx0fV44hgfmIVKjxMN9J1t5jySVkw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/darwin-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-uq6suIWYP37qzGddBKPw5QEQPi6HiLGsO7UmkpfyaYNQ3D+rN6w6WfwH+nuqcGXWvawGwxOEroO4YGnFh95azw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-n+I0BTSRIoy+d6RPKnEVwql5UwBJolytvY4mAOIEJorKlqgPII8ix6slVVrfZ5Tnj7glIZvloylbB/EJPMWEXw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-78XJTJkvPs0kz2w61301PJjXl4g7q3JqiYMZ/M/yVI73EHBrCRTgkhu9oqG7vPqq+a/yadEW8aD+agKlk5xrmg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-XlDnu2q5yoqems+xay6wSAcg9DDD7K9RLKZEBOMZm3ckNpJBvOX20tSfby8KfrrhINDyv9V2YVZKY/SpoGJI8w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-pW4AC0P3it8c7do9MVM4p51FzHzdM/TZrerurgRcHJ2WTa1VQ1CIq18xncfpBJw4ojkiZZrKW2yIBWBP92j6Ug==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-CYbnj78HsIeA+DhgUKgFCfvNsTHFhMMrinUrMZpDXJXKN8T3XViTZ/+wtHeVxEWY8ewSzTFN+nRmSwO2tZaLUQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-loong64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-buwkd8nsph4R+ajRvw0qM5Hja/TXQow3ptzWO2EbG/cqcIkHloRrdlBtQlshyYGTNFvfkfJ5tpPLVkY4DtsPfQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-ZVykbDyk7519VwiNb9Lcj9m8XM6v5V9uKPvrEMkkEedVewf+0itkhahp4HDpgERXhwLRpWFypsGbG/J8s0QjJA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-CAXl+Dtd9UUuJd8pKKdwh6MLm3MUMiqMPmhZ3tTSXPqfyQ3vDl6R5hZdZ/kYojK4ofXtdfSv1tFq8XzWx3heNQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-GeXCej4IQtU1B+QlDV8W/RRvbzI3O/Stss+/bCXv4lZls5WGRtu2a+3JkA3i4qIUlMXpcHebWpF8AkJhATowuA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-s390x",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-3H1weTYZPxt/WOhByszQZybS9w5lKzUn1FDMsgEChbHWQwHYQQRfBxgCcZvPhjHfKyJjIievvMmEUawJrdY9Dg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-4xTZr1FUmSoQW4XIWmit3tzQrUTZM+N3P0XV8xROKYF50XfI7xeO90+1bZvNwxIufQ9hDQVRJH5YhgPVF8A/HQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-sSATRjPeDBg3pdgHoQfoYBob11Kk1FGa9lui5RIHZCoCkJa9QKlvl3/vKz2usCmYYjs7ymJR/2Nnsqe+Hjt5nw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-lqnzCV+mM0gIADaKihiCg6ifgfU2L3h5E33rNQBN1Y4MaVGnzryzmvvf7UHxprpQdE8hpqLolJ9Rl+SkIRDpyw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-AL2qJILH7lNjrDmCQDvdxMfAUIv8KMNZOvrwAQ8i8//ntL9FflhOyMJ8OZSMBb8/AWXe3/5v5S20y3zCoZWKoQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-QtiuPytchRyC4rwUKhexJdQKvDuZ6hWloi3igqPQNUJCS1/v9EiO3UTOXR6A3FoMo4fnAKbWJdqaIwhOzh8qEw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-WkhYDmpTjLvGlScA1rwjRUmhl4k8oXR3cIbtqWmELgU/dFeHHlEllxDvdWcNJV9rbzCexB5vz8gtNewWLgCT7Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/sunos-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-GPMSkTOtMnv2U2F8gxe4Io6qmVs+YKyp832Etqqxr0hFngmXQ3rzwytelm3GIn7T4VviRUlf3sOgBOiTdvaf7g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/win32-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-PIhhEkE9uPBleRBrQEJpUn7MBnibZzbGzYWPmY3x+YoVg/95zbjB4CxPPOQ8l5tYYM4mMaCthF8/1DIfBQQyWQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/win32-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-YmJbfTlvU7Sdn9BB+4PRES4oB6pxgS37MAONj+hBr/cpXS1aBPKXxNnDbu+QCWPj0o9dgyxeq79g6c5P8KeuYA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@esbuild/win32-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-esbuild-0.28.2-LICENSE.md"
+      ],
+      "notice_basis": "Shared upstream repository MIT notice; individual installed package omits a license file."
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@joshwooding/vite-plugin-react-docgen-typescript",
+      "version": "0.7.0",
+      "license": "MIT",
+      "integrity": "sha512-qvsTEwEFefhdirGOPnu9Wp6ChfIwy2dBCRuETU3uE+4cC+PFoxMSiiEhxk4lOluA34eARHA0OxqsEUYDqRMgeQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-vite-plugin-react-docgen-typescript-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/joshwooding/vite-plugin-react-docgen-typescript/6f7e7cf2f8c61ad3e83bcbd3aec4f85029798089/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "license": "MIT",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jridgewell__gen-mapping-0.3.13-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "license": "MIT",
+      "integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jridgewell__remapping-2.3.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "license": "MIT",
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jridgewell__resolve-uri-3.1.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jridgewell__sourcemap-codec-1.6.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jridgewell__trace-mapping-0.3.31-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.2.4",
+      "license": "MIT",
+      "integrity": "sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-android-arm-eabi",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-0LC7ye4hvqbIKxAzThzvswgHLFu2AURKzYLeSVvLdu2TBOYWQDmHnTqPLeA597BcUCxiLqLsS4CJ5uoI5WYWCQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-android-arm64",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-b5jtVTH6AU5CJXHNdj7Jj9IEiR9yVjjnwHzPJhGyHGPdcsZSzBCkS9GBbV33niRMvKthDwQRFRJfI4a+k4PvYg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-darwin-arm64",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-obCE8B7ISKkJidjlhv9xRGJPOSDG2Yu6PRga9Ruaz35uintHxbp1Ki/Yc71wx4rj3Edrm0a1kzG1TAwit0wFpg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-darwin-x64",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-JL6Xb5IwPQT8rUzlpsX7E+AgfcdNklXNPFp8pjCQQ5MQOQo5rtEB2ui+3Hgg9Sn7Y9Egj6YOLLiHhLpdAe12Aw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-freebsd-x64",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-SDQ/3MQFw58fqQz3Z1PhSKFF3JoCF4gmlNjziDm8X02tTahCw0qJbd7FGPDKw1i4VTBZene9JPyC3mHtSvi+wA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-arm-gnueabihf",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-Av+D1MIqzV0YMGPT9we2SIZaMKD7Cxs4CvXSx/yxaWHewZjYEjScpOf5igc8IILASViw4WTnjlwUdI1KzVtDHQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-arm-musleabihf",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-Cs2fdJ8cPpFdeebj6p4dag8A4+56hPvZ0AhQQzlaLswGz1tz7bXt1nETLeorrM9+AMcWFFkqxcXwDGfTVidY8g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-arm64-gnu",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-qdOfTcT6SY8gsJrrV92uyEUyjqMGPpIB5JZUG6QN5dukYd+7/j0kX6MwK1DgQj39jtUYixxPiaRUiEN1+0CXgQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-arm64-musl",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-EoTCZneNFU/P2qrpEM+RHmQwt+CvDkyGESG6qhr7KaegXLZwePfbrkCDfAk8/rhxbDUVGsZILX+2tqPzFtoFWA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-ppc64-gnu",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-zALjmZYgxFLHjXeudcDF0xFGNydTAtkAeXAr2EuC17ywCyFxcmQra4w0BMde0Yi/re4Bi4iwEoEXtYN7l6eBLQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-riscv64-gnu",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-fPP8M6zQLS7Jz7o9d5ArUSuAuSK3e+WCYVrCpdzeCOejidtZExJ9tjhDrAd3HEPqARBCPmdpqxESPFqy44vkBQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-riscv64-musl",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-7IcC4Ao02oGpfnjt+X/oF4U2mllo2qoSkw5xxiXNKL9MCTsTiAC6616beOuehdxGcnz1bRoPC1RQ2f1GQDdN+g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-s390x-gnu",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-pbXIhiNFHoqWeqDNLiJ9JkpHz1IM9k4DXa66x+1GTWMG7iLxtkXgE53iiuKSXwmk3zIYmaPVfBvgcAhS583K4Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-x64-gnu",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-MYCguB9RvBvlSd6gbuNI7QwiLoCCAlGnlRJFPrzLI6U1/9wkC/WK6LtBAUln55H1Ctqw45PWmqrobKoMhsYQzQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-linux-x64-musl",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-5eY0B/bxf1xIUxb4NOTvOI3KWtBQfPWYyKAzgcrCt0mDibSZygVpO1Pz8bkeiSZ5Jj9+M09dkggG3H8I5d0Uyg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-openharmony-arm64",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-Gld0ajrFTUXNtdw20fVBuTQx66FA75nIVg+//pPfR3sXkuABB4mTBhl3r9JNzrJpgW//qiwxf0nWXUWGJSL3UQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-wasm32-wasi",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-T6KVD7rhLzFlwGRXMnxUFfkCZD8FHnb968wVXW1mXzgRFc5RNXOBY2mPPDZ77x5Ln76ltLMgtPg0cOkU1NSrEQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-win32-arm64-msvc",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-Ujvw4X+LD1CCGULcsQcvb4YNVoBGqt+JHgNNzGGaCImELiZLk477ifUH53gIbE7EKd933NdTi25JWEr9K2HwXw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-win32-ia32-msvc",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-0cwxKO7KHQQQfo4Uf4B2SQrhgm+cJaP9OvFFhx52Tkg4bezsacu83GB2/In5bC415Ueeym+kXdnge/57rbSfTw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-parser/binding-win32-x64-msvc",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-rOrnSQSCbhI2kowr9XxE7m9a8oQXnBHjnS6j95LxxAnEZ0+Fz20WlRXG4ondQb+ejjt2KOsa65sE6++L6kUd+w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-oxc-parser-0.127.0-LICENSE"
+      ],
+      "notice_basis": "Shared upstream repository MIT notice; individual installed package omits a license file."
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-project/types",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-aIYXQBo4lCbO4z0R3FHeucQHpF46l2LbMdxRvqvuRuW2OxdnSkcng5B8+K12spgLDj93rtN3+J2Vac/TIO+ciQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-oxc-project__types-0.127.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-android-arm-eabi",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-xQoCRv+gKax9KTdwdaQNnAFOai8neay7g3jExDIORzhbrejwGSJaZNTdOJHR5ziLg2joMxOCMOFMo4zuxza2uQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-android-arm64",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-HF5oiE2L05yInPYCFD/4uxSrEZW4SuIfn99Y6L1xnJnzl066JR+MJs2rIdstw8A2MPlAKH+13dpFPNycjqzvGg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-darwin-arm64",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-UX4u49CVCAD8QZNELaW8eMGgMAGwFWYEPbvNsh+3r/gs4NX3KfpiACMVwRQT0EuH3uat9hM5Zl+Ppm9pJD8tgg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-darwin-x64",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-J9xPx7YBkrRmJ+xl561ztnMWEc1aOyjEIxBiGX1dVb3u7bGSnfObfcZk+Pd+uM0HZAPNsQ1xvD8j52A/uOSqNQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-freebsd-x64",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-fRlt7OvSaQkWj6+EDTVxawVxOlqJB2QSnBfkeCyK4RTvsGctbw3BiH2Tb7DzMs7bikc4BRBpvWP5zF9K8b54Zg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-arm-gnueabihf",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-gK+vPUcPQITkGwBKpZGrcDHSlU6eDGl7AQacxS2CEKAZIBHWkOVFeJwLZ4tYnA1acJqRM5lt7yYwPCVqGHIJ7A==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-arm-musleabihf",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-L/Rgas7SrOKy/z7IH+HxSFRqVO4PuLDKLEGKvnhoCBBq3UJ0YzGBou3qMzaAGgkJwsIvX2pBF+7ojzfUhLiZxQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-arm64-gnu",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-CUEYvlX1Fk7E9kUMzuswru1J9HLxMwnpDeQGjQuI4ZH+iNCoa2X9T+pvyzrbsgl7WnIeTFTlNlHsRfVdf5g9/g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-arm64-musl",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-ViN1ZibQyxwC67GpoP33oo+S9UyUnkog13vzQb9+v9bCNvrVzJuk0MRdacjtv/9xfRMVF/eqHFyl8YOeykI10Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-ppc64-gnu",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-CU1sCqWnhGqYD5I1HedHk5pujrn7ssDkNB/AEQd/pd3D/EojVSgJUlpbafwIbyhia3PgIfkvdFpRPWSALzVumA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-riscv64-gnu",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-jWVyZtIHca4Gb96x7dag+y69vlei7ffjrsveLkmf2ZhqEAz6ZSBnY1GWvgZUaZlwZP62A3xD092BW97Q5VGc+g==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-riscv64-musl",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-LF29obFqNgBUgDX7rmUK7M4D0JQG5LxhYzn3xXmECcHU9aQAdWG7NiY052qybtesEdwHQXKNTWYQ7mTsybNvWg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-s390x-gnu",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-+NYcm+cCHBbtdQQ3A4phQTSuVRYnNHz7wrl9XRAPEovcdoqi0mb1K5ZOl+jN54ZD+q1zz3V0vltbFJmzecJKmw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-x64-gnu",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-UQqZDdG2r2HhAOsZEgufkIWHPQ886IUyuJQkoZByvzhW8j51R4UNzGBJFkTiTnLhQnggwJRdJgFWK4uY6ZVIMw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-linux-x64-musl",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-3Q9PMRjalWkT6NZ4jfujuqTCFwoWErg3y3BnOgb544B8IMw4PktiwWOigMfOHNRLMghZeJ7hpfpZf4CP7rV7Og==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-openharmony-arm64",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-Eljeq3ndtyKhM+Es8LITi4Zl2htzuRZcrPMF3kMCsrILztvU6AjZ3FuEhHHKobPUB9rMpzLpJP5bDqXI7r+iog==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-wasm32-wasi",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-HGDbNsIywqc4LxU38+CTJNnB/6BF7rheWOJ259b4eE0aEnelYblC8x+1tEd63bp31fYne63RQz9Jb4yVnC7Yig==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/core",
+      "version": "1.11.0",
+      "license": "MIT",
+      "integrity": "sha512-l9Oo58x0HOP5znGzVhYW9U3e5wVuA4LAZU2AGezTmkhO1CgQRFDhDg4nneHsu/t3WniXg9QrG2nIXL/ZS8ln8Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/runtime",
+      "version": "1.11.0",
+      "license": "MIT",
+      "integrity": "sha512-55coeOFKHv1ywEcUXJtWU5f+Jr/W5tZDvZig8DLKSwUN1JpROQ4rk/SNOQiFWmaR/VKF4zuFyW1B8JduOSv6Pg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "license": "MIT",
+      "integrity": "sha512-c95qOXkHdydNKhscBTebqEC1CVAZpyqOfVfBzQ1qgzyl3gfeldUjIggDbIZgDKsHLgnsM+igH7TJ/eAasaVuMA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-win32-arm64-msvc",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-iWx25CBEgH49iE9q5coEGI/jb1jl5kkCY9z6U5Og67xCkQ/WFMDc2J5U78+AE91SUxM2NqSLhJC8/PLfWnImww==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-resolver/binding-win32-x64-msvc",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-VPoCAhKvCQTlG7vxqaBXcmuvbh77BfnGXj8g0pbvVXpm1F/R8rDVwqIWcEbMzrI1JvJlm8v7T9uMVQb6UctMRg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-oxc-resolver-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/oxc-project/oxc-resolver/1971b77697c575707333454839f3929d43b47c9d/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@playwright/test",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-oxMK4vllB9RK5NQ2l1pq1IfOf2AvnEuj/vYGDj0H2nMtmtZpKtCwt/l00GEO6xjGfpBNAvjovvYdCm50dRQkpQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-playwright__test-1.63.0-LICENSE",
+        "licenses/npm-playwright__test-1.63.0-NOTICE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@radix-ui/react-compose-refs",
+      "version": "1.1.2",
+      "license": "MIT",
+      "integrity": "sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-radix-ui__react-slot-1.2.3-LICENSE"
+      ],
+      "notice_basis": "Shared upstream repository MIT notice; individual installed package omits a license file."
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@radix-ui/react-slot",
+      "version": "1.2.3",
+      "license": "MIT",
+      "integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-radix-ui__react-slot-1.2.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-bp9svZb+QurZeh+8H4BhrZkifEB0YBNvTVzNSJnJQkj4NrRwmQoDUCGP0vSN7PbvLeM7l1tK6GXL8mrTiH2myg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-wm6Dld3RXUAZ/gRWKyUy+4W1B5CB5UeFaOzsSWJWEdxZXHH8rCYiZ5dGe6oJmhsunAPWzL7FZV+VtvmN5Ye2eA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-UbEfXq/AqGNgRTV3ik+X/iR6mUxu2QdYAadwRxJWquUGnW6gDqdP1FtLtFXRow7RJx0ssRwi80XAPr4r+4DtsA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-7f5h17q5KZVx/ji1vb8OTq31ch1O2I7K8NPIr44GkyWTApXMIsmhWqZfgpOH10xeauqghDAvGlZktasCkcF6Eg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-ynOk/eEYhC6ZB2xCGvKrEOwE58oBy9LnrAqtkrDF9Fz1VTaNdGZTsV0VarJdhPwb+sOJTGjCLwcuyRJZ1dnMcQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-ERrAs185meZZhGan7a4l3RiiJK1ArSDlHdST++uvSxe+FDbR4TwUPahT/cbZJvaG6fIpDpF78surN+tX708Y4Q==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-KN7OHKD0J3jy1UzBwZWPxpwhODf9IARUIJcrH+yLYKOcmegZ8luEUM38lDP1bDVj40yP6PsSzCqOJF76vljFnQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-8l9wP8O+wa8zD6iw6egSfzVtu7oZVfH3hlUsMM4MwbLMhxleqeoXbZzjddyK3YyNlwLhqznq3tF7PkNJ8T/V2w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-SeXNKeQzA5kLhz/J0CH6ZP0/HJ3v1xm/0YbiYpE0kK7emfRC2OIGGIaE14xzkISEGv2aYuUSpiLiU5Gbq+OI0A==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-mtht0nR+y8/hart4175Ll15w7lY8dg7CtQ+j2FDNTsDRspOWTK/2V3l0aj9sIj7XmvqxT8Yli/wq22e7feTTWg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-FSM94nGd55NYo48usCyM/nHfUKRnqc9+b0vJNuKV0oCCpIp/OGims7rO1Nv/DkFkt0S/s2rxsJ2kkS8J3HcpeA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-C3YxNB16myRLs7o+B+6PnQ6jBsdIS4+AE4Ah8glVGhDpEv9AOvxhZ/1duAb4B0UGczEK/lBbccksd8VI+p6zfw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-571TlE/F1eeTjjdjYAMMMPs1Mfv3MtX6s3+ZKVU6HiUjZ5Njc6c/qzNy/8K3zALTZnaw3JQVYrHxvNfjm43KAg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-QXW+ZWaiqs2c7Fi++D/SsW07LTPcUrncxcskJGfGNBoaLik1IU6fJymz4HsqwEO0u5Iq11yTO0B/mc4cPk7jrQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-5FQFGgah17YeMtG1Yd5a+rMxQpTksyNXxRtKz06FVTaQw3RKYUJQbUoKk0/5jrXBpDo+7makNP7UHA2LQyH64A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-rolldown-1.2.10-LICENSE"
+      ],
+      "notice_basis": "Shared upstream repository MIT notice; individual installed package omits a license file."
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "license": "MIT",
+      "integrity": "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-rolldown__pluginutils-1.0.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@rollup/pluginutils",
+      "version": "5.4.0",
+      "license": "MIT",
+      "integrity": "sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-rollup__pluginutils-5.4.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/builder-vite",
+      "version": "10.6.0",
+      "license": "MIT",
+      "integrity": "sha512-7zt8tYB6dnSO8fbjUz91MHexGDpf9HrLlA3FAmlVb+2ZL3eWUs499L3I6BDUymcWu7oW5WCBJlB8ERj8ZLLzig==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-storybook-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/storybookjs/storybook/4c0523e107d84961a2c7878be8841039edc3e324/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/global",
+      "version": "5.0.0",
+      "license": "MIT",
+      "integrity": "sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-storybook__global-5.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/icons",
+      "version": "2.1.0",
+      "license": "MIT",
+      "integrity": "sha512-Fxh9vYpX9bQqFeHRiY8h2ApeRGDzRSMLwJwNZ/AIRqnyOKHxRKL+yFe+ctEkVJmuptRE9u1Hrn8ZZNHyfDKKNg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-storybook__icons-2.1.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/react",
+      "version": "10.6.0",
+      "license": "MIT",
+      "integrity": "sha512-0xfYYPRHcr5ta1hmXJCSezH4JGuUHJ+xVF9f1j+Y/MWEMOQE4wnaKWKsk/HLrDjZkT5hKfvmogt9b0yduP6zEQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-storybook-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/storybookjs/storybook/4c0523e107d84961a2c7878be8841039edc3e324/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/react-dom-shim",
+      "version": "10.6.0",
+      "license": "MIT",
+      "integrity": "sha512-ZE0l4xL6d00rKFeJhRDuh0t3r+/2ffhx47lIyaSWrTD5kuM3nDjKDxCIWwX4E3gLV+oNX8E1prXRMuEWJUJwJg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-storybook-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/storybookjs/storybook/4c0523e107d84961a2c7878be8841039edc3e324/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@storybook/react-vite",
+      "version": "10.6.0",
+      "license": "MIT",
+      "integrity": "sha512-nc1dqnmjGOcDJvPCkAn4Hmu1gi7dNHHoibNmlBp0d1adosejELZxuNjHBkPl/KxZjbzP3jljQHnHB/guxd8e2g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-storybook-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/storybookjs/storybook/4c0523e107d84961a2c7878be8841039edc3e324/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/node",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-/T8IKEsf9VTU6tLjgC7+sv2mOPtQxzE2jMw7u4Tt40Tx+QSZxpzh95/H6cMKoja9XuW7iMdLJYBB0o9G1CaAgg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwindcss__node-4.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "magic-string",
+      "version": "0.30.21",
+      "license": "MIT",
+      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-magic-string-0.30.21-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-krXjAikiaFSPaK/FkAQT5UTx3VormQaiZ5hBFlJZ9UFQGB/rwg1MZIhHAG9smMQRTdyJxP6Qt5MwMtdyU5FWrA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwindcss__oxide-4.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-android-arm64",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-Y85A2gmPSkl5Ve5qR86GL4HT509cFqQh1aes9p3sSkyTPwt0Pppf3GkwGe4JPACcRYjgJIEhQgM6dBClnr0NYw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-darwin-arm64",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-BiaWatpBcERQFDlOjRDpIVXuFK5PJez5SA4JMg6VYZdBYU+qKfV/vqjcIs+IYmtitf1xYQZTwXvU/8y4lfZUGw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-darwin-x64",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-fAeUqfV5ndhxRwai8cXGzdLvul9utWOmeTkv69unv4ZXixjn61Z+p9lCWdwOwA3TYboG3BwdVuN/RDjhBRl0mw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-freebsd-x64",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-iyf5bV6+wnAlflVeEy7R25dupxTNECZN5QMI0qNT6eT+EgaGdZcKhGkr5SdoaWiLJ3spLqIY9VCeSGrwmtg4kw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-aAYUprJAJQWWbRrPvtjdroZ56Md+JM8pMiopS6xGEwDfLhqj+2ver2p4nU4Mb3CRqcMmNBjo8KkUgcxhkzVQGQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-linux-arm64-gnu",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-nDxldcEENOxZRzC2uu9jrutZdAAQtb+8WWDCSnWL1zvBk1+FN+x6MtDViPB5AJMfttVCUhehGWus3XBPgatM/w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-linux-arm64-musl",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-Md44bD6veX/PC5iyF8cDVnw4HBIANZepRZZ7a8DQOvkfo5WUBwcp6iAuCUz23u+4SUkhJlD3eL7hNdW8ezd/kA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-linux-x64-gnu",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-tx7us1muwOKAKWao2v/GaafFeQboE6aj88vC6ziN2NCGcRm8gWUhwjzg+YdVB1e4boAtdtma4L43onunI6NS4w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-linux-x64-musl",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-SJxX60smvHgasZoBy11dX6YRjXJFovwWBoedhbQPOBzgFWBHGB+TVPWB9BxzR7TTxU8FQZAI2AyiNCMzFm8Img==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-jx1+rPhY/5Ympkktd656HBWEBLxP7dH06losBLjjf5vgCODXvi9KhtftWcMIwTFIDqBr7cRnQkdLnAG+IOlGvQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "license": "MIT",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "license": "MIT",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "license": "MIT",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "license": "MIT",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "license": "MIT",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "integrity": null,
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-win32-arm64-msvc",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-3rc292Ca2ceK6Ulcc/bAVnTs/3nDtoPhyEKlgPv+yQJQi/JS/AMJlqzxvlDacL1nekbrcf6bTqp/jV4qgnPxNQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/oxide-win32-x64-msvc",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-yJ0pwIVc/nYeGoV02WtsN8KYyLQv7kyI2wDnkezyJlGGjkd4QLwDGAwl47YpPJeuI0M0ObaXGSPjvWDPeTPggw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwindcss__oxide-win32-x64-msvc-4.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tailwindcss/vite",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-yYU8cogLeSh/ms2jh8Fj7jaba/EWa7Ja6GoUqYZaraEuCI5YS6ms6ObZgjjedm+jm6XZjdNRWBpPP6Z86oOxcw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwindcss__vite-4.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@testing-library/dom",
+      "version": "10.4.2",
+      "license": "MIT",
+      "integrity": "sha512-yzr2S9HyAIdhz2/6qHgbs665Q7PKVcDF05vsOlHPxG1mo36gKVesdYVeDLnXgfjJ03CrKRk08knc6+E/9m8v2Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-testing-library__dom-10.4.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@testing-library/jest-dom",
+      "version": "6.9.1",
+      "license": "MIT",
+      "integrity": "sha512-zIcONa+hVtVSSep9UT3jZ5rizo2BsxgyDYU7WFD5eICBE7no3881HGeb/QkGfsJs6JTkY1aQhT7rIPC7e+0nnA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-testing-library__jest-dom-6.9.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "dom-accessibility-api",
+      "version": "0.6.3",
+      "license": "MIT",
+      "integrity": "sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-dom-accessibility-api-0.6.3-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@testing-library/user-event",
+      "version": "14.6.7",
+      "license": "MIT",
+      "integrity": "sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-testing-library__user-event-14.6.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@tybys/wasm-util",
+      "version": "0.10.4",
+      "license": "MIT",
+      "integrity": "sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/aria-query",
+      "version": "5.0.4",
+      "license": "MIT",
+      "integrity": "sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__aria-query-5.0.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/babel__core",
+      "version": "7.20.5",
+      "license": "MIT",
+      "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__babel__core-7.20.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/babel__generator",
+      "version": "7.27.0",
+      "license": "MIT",
+      "integrity": "sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__babel__generator-7.27.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/babel__template",
+      "version": "7.4.4",
+      "license": "MIT",
+      "integrity": "sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__babel__template-7.4.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/babel__traverse",
+      "version": "7.28.0",
+      "license": "MIT",
+      "integrity": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__babel__traverse-7.28.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "license": "MIT",
+      "integrity": "sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__chai-5.2.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "license": "MIT",
+      "integrity": "sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__deep-eql-4.0.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/doctrine",
+      "version": "0.0.9",
+      "license": "MIT",
+      "integrity": "sha512-eOIHzCUSH7SMfonMG1LsC2f8vxBFtho6NGBznK41R84YzPuvSBzrhEps33IsQiOW9+VL6NQ9DbjQJznk/S4uRA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__doctrine-0.0.9-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "license": "MIT",
+      "integrity": "sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__estree-1.0.9-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/node",
+      "version": "24.10.1",
+      "license": "MIT",
+      "integrity": "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__node-24.10.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/react",
+      "version": "19.2.14",
+      "license": "MIT",
+      "integrity": "sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__react-19.2.14-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/react-dom",
+      "version": "19.2.3",
+      "license": "MIT",
+      "integrity": "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__react-dom-19.2.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@types/resolve",
+      "version": "1.20.6",
+      "license": "MIT",
+      "integrity": "sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-types__resolve-1.20.6-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.1",
+      "license": "MIT",
+      "integrity": "sha512-yxLaQV9gkhS8ezJqCM6+ndU7mDY6gqAg75NQ+0IjwEI8IYOmQCgkRwHKVSfWXW076DsqMo0Dk+0FK1U+M5RgFw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vitejs__plugin-react-6.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@vitest/expect",
+      "version": "3.2.4",
+      "license": "MIT",
+      "integrity": "sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vitest__expect-3.2.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@vitest/pretty-format",
+      "version": "3.2.4",
+      "license": "MIT",
+      "integrity": "sha512-IVNZik8IVRJRTr9fxlitMKeJeXFFFN0JaB9PHPGQ8NKQbGpfjlTx9zO4RefN8gp7eqjNy8nyK3NZmBzOPeIxtA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vitest__pretty-format-3.2.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@vitest/spy",
+      "version": "3.2.4",
+      "license": "MIT",
+      "integrity": "sha512-vAfasCOe6AIK70iP5UD11Ac4siNUNJ9i/9PZ3NKx07sG6sUxeag1LWdNrMWeKKYBLlzuK+Gn65Yd5nyL6ds+nw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vitest__spy-3.2.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@vitest/utils",
+      "version": "3.2.4",
+      "license": "MIT",
+      "integrity": "sha512-fB2V0JFrQSMsCo9HiSq3Ezpdv4iYaXRG1Sx8edX3MwxfyNn83mKiGzOcH+Fkxt4MHxr3y42fQi1oeAInqgX2QA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vitest__utils-3.2.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@webcontainer/env",
+      "version": "1.1.1",
+      "license": "MIT",
+      "integrity": "sha512-6aN99yL695Hi9SuIk1oC88l9o0gmxL1nGWWQ/kNy81HigJ0FoaoTXpytCj6ItzgyCEwA9kF1wixsTuv5cjsgng==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-webcontainer__env-1.1.1-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT",
+      "integrity": "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ansi-regex-5.0.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ansi-styles",
+      "version": "5.2.0",
+      "license": "MIT",
+      "integrity": "sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ansi-styles-5.2.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "aria-query",
+      "version": "5.3.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-aria-query-5.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "license": "MIT",
+      "integrity": "sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-assertion-error-2.0.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ast-types",
+      "version": "0.16.3",
+      "license": "MIT",
+      "integrity": "sha512-FvWoWYfSCM6kRxCSH+MGLHIKKGRL6A6AW7Zek2O32REPQRdg131428uRTKMBYAeRd3XXAaHDS60Wpri7CdKDrA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ast-types-0.16.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "license": "MIT",
+      "integrity": "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-balanced-match-4.0.4-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "baseline-browser-mapping",
+      "version": "2.11.25",
+      "license": "Apache-2.0",
+      "integrity": "sha512-gMmEShwwq7FJqMwvfRwvCl00v4kN+KOfJqXn+f4nrufak5gNHJOksd/60Dvjuz7sI8Y5WiSFBa8FEYr+zoyqCw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-baseline-browser-mapping-2.11.25-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "license": "MIT",
+      "integrity": "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-brace-expansion-5.0.12-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "browserslist",
+      "version": "4.29.0",
+      "license": "MIT",
+      "integrity": "sha512-3GSvyjvDI4Dur1Meg2BekJquu5uF+9R9a1+5M1Mde192eZoXbeXjzgOsgqPS2V8D5wrrip0gR5Hf/GhWQ9ZzaA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-browserslist-4.29.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "bundle-name",
+      "version": "4.1.0",
+      "license": "MIT",
+      "integrity": "sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-bundle-name-4.1.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "caniuse-lite",
+      "version": "1.0.30001812",
+      "license": "CC-BY-4.0",
+      "integrity": "sha512-qN+QNNBr93TCmFrmte0bBCjSDMuRvt78VlHT99qIGPszm4QsqCX8lnyWUFkHi8B7ZBAPq8SH+UqyXNy/odMdng==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-caniuse-lite-1.0.30001812-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "chai",
+      "version": "5.3.3",
+      "license": "MIT",
+      "integrity": "sha512-4zNhdJD/iOjSH0A05ea+Ke6MU5mmpQcbQsSOkgdaUMJ9zTlDTD/GYlwohmIE2u0gaxHYiVHEn1Fw9mZ/ktJWgw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-chai-5.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "check-error",
+      "version": "2.1.3",
+      "license": "MIT",
+      "integrity": "sha512-PAJdDJusoxnwm1VwW07VWwUN1sl7smmC3OKggvndJFadxxDRyFJBX/ggnu/KE4kQAB7a3Dp8f/YXC1FlUprWmA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-check-error-2.1.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "class-variance-authority",
+      "version": "0.7.1",
+      "license": "Apache-2.0",
+      "integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-class-variance-authority-0.7.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "clsx",
+      "version": "2.1.1",
+      "license": "MIT",
+      "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-clsx-2.1.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "license": "MIT",
+      "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-convert-source-map-2.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "css.escape",
+      "version": "1.5.1",
+      "license": "MIT",
+      "integrity": "sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-css.escape-1.5.1-LICENSE-MIT.txt"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-csstype-3.2.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-debug-4.4.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "deep-eql",
+      "version": "5.0.2",
+      "license": "MIT",
+      "integrity": "sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-deep-eql-5.0.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "default-browser",
+      "version": "5.5.1",
+      "license": "MIT",
+      "integrity": "sha512-m1pAzaJgZ/gssEqlOhJkPJp8Xly7QyW6xcrkUa2KKcDeDSEMP7X8xipU3snUcfisTQx0w1AGae+9UtJSfVnXGw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-default-browser-5.5.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "default-browser-id",
+      "version": "5.0.1",
+      "license": "MIT",
+      "integrity": "sha512-x1VCxdX4t+8wVfd1so/9w+vQ4vx7lKd2Qp5tDRutErwmR85OgmfX7RlLRMWafRMY7hbEiXIbudNrjOAPa/hL8Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-default-browser-id-5.0.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "define-lazy-prop",
+      "version": "3.0.0",
+      "license": "MIT",
+      "integrity": "sha512-N+MeXYoqr3pOgn8xfyRPREN7gHakLYjhsHhWGT3fWAiL4IkAt0iDw14QiiEm2bE30c5XX5q0FtAA3CK5f9/BUg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-define-lazy-prop-3.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "dequal",
+      "version": "2.0.3",
+      "license": "MIT",
+      "integrity": "sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-dequal-2.0.3-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-detect-libc-2.1.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "doctrine",
+      "version": "3.0.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-doctrine-3.0.0-LICENSE",
+        "licenses/npm-doctrine-3.0.0-LICENSE.closure-compiler",
+        "licenses/npm-doctrine-3.0.0-LICENSE.esprima"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "dom-accessibility-api",
+      "version": "0.5.16",
+      "license": "MIT",
+      "integrity": "sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-dom-accessibility-api-0.5.16-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "electron-to-chromium",
+      "version": "1.5.438",
+      "license": "ISC",
+      "integrity": "sha512-AN9xMU1hJiT65LkCUPL1DZm5TCbOPb2Qsm5pYwFLEXp6/qj9SdT4yMiqs7Qqstwvkn1zF7l36SRGt+s6XcJ0FA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-electron-to-chromium-1.5.438-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "empathic",
+      "version": "2.1.0",
+      "license": "MIT",
+      "integrity": "sha512-AnfC1ATldl49/cvZdLPDjBfrRNwbDO05aibiOtzQu3qtlbJtomNLhF30HEtn/7iBz50dlMECqATo3fG0LrdEgw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-empathic-2.1.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "enhanced-resolve",
+      "version": "5.25.1",
+      "license": "MIT",
+      "integrity": "sha512-nGXts5znJzmWPu+mIE9izCOzdg63oJca2mDzGWWTth7sr4aCToKcoyFVBQwN75Ij5Pf6p510EwkTqViTRzDV+w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-enhanced-resolve-5.25.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "es-errors",
+      "version": "1.3.0",
+      "license": "MIT",
+      "integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-es-errors-1.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "integrity": "sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-esbuild-0.28.2-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT",
+      "integrity": "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-escalade-3.2.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "esprima",
+      "version": "4.0.1",
+      "license": "BSD-2-Clause",
+      "integrity": "sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-esprima-4.0.1-LICENSE.BSD"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "estree-walker",
+      "version": "2.0.2",
+      "license": "MIT",
+      "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-estree-walker-2.0.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "esutils",
+      "version": "2.0.3",
+      "license": "BSD-2-Clause",
+      "integrity": "sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-esutils-2.0.3-LICENSE.BSD"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-fdir-6.5.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "license": "MIT",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "function-bind",
+      "version": "1.1.2",
+      "license": "MIT",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-function-bind-1.1.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "license": "MIT",
+      "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-gensync-1.0.0-beta.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "glob",
+      "version": "13.0.6",
+      "license": "BlueOak-1.0.0",
+      "integrity": "sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-glob-13.0.6-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "license": "ISC",
+      "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-graceful-fs-4.2.11-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "hasown",
+      "version": "2.0.4",
+      "license": "MIT",
+      "integrity": "sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-hasown-2.0.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "indent-string",
+      "version": "4.0.0",
+      "license": "MIT",
+      "integrity": "sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-indent-string-4.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-core-module",
+      "version": "2.17.0",
+      "license": "MIT",
+      "integrity": "sha512-J/vG0zBCbIKOQFfufSwyXdMrsohyJIUNkrnmo6WZGzoM7tr/lsbfW5b2BvisL6zsyMzK9UxV9L6c7AoFbyXHOA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-is-core-module-2.17.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-docker",
+      "version": "3.0.0",
+      "license": "MIT",
+      "integrity": "sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-is-docker-3.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-inside-container",
+      "version": "1.0.0",
+      "license": "MIT",
+      "integrity": "sha512-KIYLCCJghfHZxqjYBE7rEy0OBuTd5xCHS7tHVgvCLkx7StIoaxwNW3hCALgEUjFfeRk+MG/Qxmp/vtETEF3tRA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-is-inside-container-1.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-wsl",
+      "version": "3.1.1",
+      "license": "MIT",
+      "integrity": "sha512-e6rvdUCiQCAuumZslxRJWR/Doq4VpPR82kqclvcS0efgt430SlGIk05vdCN58+VrzgtIcfNODjozVielycD4Sw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-is-wsl-3.1.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "jiti",
+      "version": "2.7.0",
+      "license": "MIT",
+      "integrity": "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jiti-2.7.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-js-tokens-4.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "jsesc",
+      "version": "3.1.0",
+      "license": "MIT",
+      "integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jsesc-3.1.0-LICENSE-MIT.txt"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "json5",
+      "version": "2.2.3",
+      "license": "MIT",
+      "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-json5-2.2.3-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "jsonc-parser",
+      "version": "3.3.1",
+      "license": "MIT",
+      "integrity": "sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-jsonc-parser-3.3.1-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lightningcss-1.32.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-android-arm64",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.32.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lightningcss-win32-x64-msvc-1.32.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "loupe",
+      "version": "3.2.1",
+      "license": "MIT",
+      "integrity": "sha512-CdzqowRJCeLU72bHvWqwRBBlLcMEtIvGrlvef74kMnV2AolS9Y8xUv1I0U/MNAWMhBlKIoyuEgoJ0t/bbwHbLQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-loupe-3.2.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lru-cache",
+      "version": "11.5.3",
+      "license": "BlueOak-1.0.0",
+      "integrity": "sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lru-cache-11.5.3-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lucide-react",
+      "version": "1.47.0",
+      "license": "ISC",
+      "integrity": "sha512-o8C23aXpNQypRY73W7fW02EyvWJinEMXgKeGjFoKym0zj3Q73hD97A1IQps1g8C14HTGsOpZL0Am+xjfgFZAbg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lucide-react-1.47.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lz-string",
+      "version": "1.5.0",
+      "license": "MIT",
+      "integrity": "sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lz-string-1.5.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "magic-string",
+      "version": "1.4.2",
+      "license": "MIT",
+      "integrity": "sha512-vG+rjFRj1PqdIBozIxAGMjPlOhaVe+GXpbttY/iSK7rGcJRMlwNJO7dcUwmUqkymsFLJiNGI06t4D7Fr7yRC9g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-magic-string-1.4.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "min-indent",
+      "version": "1.0.1",
+      "license": "MIT",
+      "integrity": "sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-min-indent-1.0.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "minimatch",
+      "version": "10.2.6",
+      "license": "BlueOak-1.0.0",
+      "integrity": "sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-minimatch-10.2.6-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "minimist",
+      "version": "1.2.8",
+      "license": "MIT",
+      "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-minimist-1.2.8-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "minipass",
+      "version": "7.1.3",
+      "license": "BlueOak-1.0.0",
+      "integrity": "sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-minipass-7.1.3-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ms-2.1.3-license.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "nanoid",
+      "version": "3.3.19",
+      "license": "MIT",
+      "integrity": "sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-nanoid-3.3.19-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "node-releases",
+      "version": "2.0.57",
+      "license": "MIT",
+      "integrity": "sha512-kQK9LGGFiHtrWiNhZtA7Qbw17AQz+dmsEKODRIVTXA9+e5MS/2gZEBhYJt13GrAz5/IOZKddH/0Z3TP/Zgo+yw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-node-releases-2.0.57-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "open",
+      "version": "10.2.0",
+      "license": "MIT",
+      "integrity": "sha512-YgBpdJHPyQ2UE5x+hlSXcnejzAvD0b22U2OuAP+8OnlJT+PjWPxtgmGqKKc+RgTM63U9gN0YzrYc71R2WT/hTA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-open-10.2.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "oxc-parser",
+      "version": "0.127.0",
+      "license": "MIT",
+      "integrity": "sha512-bkgD4qHlN7WxLdX8bLXdaU54TtQtAIg/ZBAfm0aje/mo3MRDo3P0hZSgr4U7O3xfX+fQmR5AP04JS/TGcZLcFA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-oxc-parser-0.127.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "oxc-resolver",
+      "version": "11.21.2",
+      "license": "MIT",
+      "integrity": "sha512-w5tLwYN3Zo24w5EeWJjJWZOwhYqTtC8PS2B1tIt7BZUuqTIcU07sQValbDw+rq7+AuAGzOHklgK+ifsy4lpXfw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-oxc-resolver-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/oxc-project/oxc-resolver/1971b77697c575707333454839f3929d43b47c9d/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "path-parse",
+      "version": "1.0.7",
+      "license": "MIT",
+      "integrity": "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-path-parse-1.0.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "path-scurry",
+      "version": "2.0.2",
+      "license": "BlueOak-1.0.0",
+      "integrity": "sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-path-scurry-2.0.2-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "pathval",
+      "version": "2.0.1",
+      "license": "MIT",
+      "integrity": "sha512-//nshmD55c46FuFw26xV/xFAaB5HF9Xdap7HJBBnrKdAd6/GxDBaNA1870O79+9ueg61cZLSVc+OaFlfmObYVQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-pathval-2.0.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-picocolors-1.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "integrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-picomatch-4.0.7-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "playwright",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-playwright-1.63.0-LICENSE",
+        "licenses/npm-playwright-1.63.0-NOTICE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "playwright-core",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "integrity": "sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-playwright-core-1.63.0-LICENSE",
+        "licenses/npm-playwright-core-1.63.0-NOTICE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "postcss",
+      "version": "8.5.28",
+      "license": "MIT",
+      "integrity": "sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-postcss-8.5.28-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "pretty-format",
+      "version": "27.5.1",
+      "license": "MIT",
+      "integrity": "sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-pretty-format-27.5.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "integrity": "sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-react-19.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "react-docgen",
+      "version": "8.0.4",
+      "license": "MIT",
+      "integrity": "sha512-gIYjtVTU4NCWZnb/LXVSWfClZXnjzX3+xxi69Tkfu4YsmYuqiOk8giLkKt/WwxWqh+U66CTh8Kqbha1uPv8/qQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-react-docgen-8.0.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "react-docgen-typescript",
+      "version": "2.4.0",
+      "license": "MIT",
+      "integrity": "sha512-ZtAp5XTO5HRzQctjPU0ybY0RRCQO19X/8fxn3w7y2VVTUbGHDKULPTL4ky3vB05euSgG5NpALhEhDPvQ56wvXg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-react-docgen-typescript-2.4.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "integrity": "sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-react-dom-19.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "react-is",
+      "version": "17.0.2",
+      "license": "MIT",
+      "integrity": "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-react-is-17.0.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "recast",
+      "version": "0.23.21",
+      "license": "MIT",
+      "integrity": "sha512-mFAyJq9vUbSTARLZUvAEf1z3YxlvAwswbmxMx2mPA/MSm4KmpwvwvhsH/NIrZhyOuwD60Lzyw2qh83uCbgTPYw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-recast-0.23.21-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "redent",
+      "version": "3.0.0",
+      "license": "MIT",
+      "integrity": "sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-redent-3.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "strip-indent",
+      "version": "3.0.0",
+      "license": "MIT",
+      "integrity": "sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-strip-indent-3.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "resolve",
+      "version": "1.22.12",
+      "license": "MIT",
+      "integrity": "sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-resolve-1.22.12-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "rolldown",
+      "version": "1.2.10",
+      "license": "MIT",
+      "integrity": "sha512-OxkA08pSryMK7B3XiFA09B4OJ1xJMPgIYCBMY2xchzpqgBGsV1o0DetPAE+Sl3N3L4oCPiEzmHVSOj7iR04Zog==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-rolldown-1.2.10-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "@oxc-project/types",
+      "version": "0.151.0",
+      "license": "MIT",
+      "integrity": "sha512-J1yXrIlNDZVzE3ada310xeAw7nH8yCAyLPuUIsjKatFPmfn5bS1oW+cM+QsGOtVWd5nhSpbwZWx/rue+r5Z+PA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-oxc-project__types-0.151.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "run-applescript",
+      "version": "7.1.0",
+      "license": "MIT",
+      "integrity": "sha512-DPe5pVFaAsinSaV6QjQ6gdiedWDcRCbUuiQfQa2wmWV7+xC9bGulGI8+TdRmoFkAPaBXk8CrAbnlY2ISniJ47Q==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-run-applescript-7.1.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "scheduler",
+      "version": "0.28.0",
+      "license": "MIT",
+      "integrity": "sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-scheduler-0.28.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "semver",
+      "version": "6.3.1",
+      "license": "ISC",
+      "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-semver-6.3.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "source-map",
+      "version": "0.6.1",
+      "license": "BSD-3-Clause",
+      "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-source-map-0.6.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "license": "BSD-3-Clause",
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-source-map-js-1.2.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "storybook",
+      "version": "10.6.0",
+      "license": "MIT",
+      "integrity": "sha512-H48X6AURAFTpfN2zEux6vNesee5Oq8Gxj1IanYmblPZ218sfKSeyyerF1NC7GD7BrruoC8L4/cU0zII4y+d6zw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/upstream-storybook-MIT-LICENSE"
+      ],
+      "notice_basis": "Current upstream MIT notice at resolved commit, consistent with installed package license metadata; exact version tag not established.",
+      "notice_source": "https://raw.githubusercontent.com/storybookjs/storybook/4c0523e107d84961a2c7878be8841039edc3e324/LICENSE"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "semver",
+      "version": "7.8.5",
+      "license": "ISC",
+      "integrity": "sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-semver-7.8.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "strip-bom",
+      "version": "3.0.0",
+      "license": "MIT",
+      "integrity": "sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-strip-bom-3.0.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "strip-indent",
+      "version": "4.1.1",
+      "license": "MIT",
+      "integrity": "sha512-SlyRoSkdh1dYP0PzclLE7r0M9sgbFKKMFXpFRUMNuKhQSbC6VQIGzq3E0qsfvGJaUFJPGv6Ws1NZ/haTAjfbMA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-strip-indent-4.1.1-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "supports-preserve-symlinks-flag",
+      "version": "1.0.0",
+      "license": "MIT",
+      "integrity": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-supports-preserve-symlinks-flag-1.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tailwind-merge",
+      "version": "3.3.1",
+      "license": "MIT",
+      "integrity": "sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwind-merge-3.3.1-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tailwindcss",
+      "version": "4.3.3",
+      "license": "MIT",
+      "integrity": "sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tailwindcss-4.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tapable",
+      "version": "2.3.3",
+      "license": "MIT",
+      "integrity": "sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tapable-2.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tiny-invariant",
+      "version": "1.3.3",
+      "license": "MIT",
+      "integrity": "sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tiny-invariant-1.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tinyglobby-0.2.17-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tinyrainbow",
+      "version": "2.0.0",
+      "license": "MIT",
+      "integrity": "sha512-op4nsTR47R6p0vMUUoYl/a+ljLFVtlfaXkLQmqfLR1qHma1h/ysYk4hEXZ880bf2CYgTskvTa/e196Vd5dDQXw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tinyrainbow-2.0.0-LICENCE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tinyspy",
+      "version": "4.0.6",
+      "license": "MIT",
+      "integrity": "sha512-u8KszXvGfU68hVcZpRHKG28T0krMuv2G5nDhiHaMLen/gIuFEgIJhaJuO69qjnXg5paSrbPMFfx3brNuN8eVSg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tinyspy-4.0.6-LICENCE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ts-dedent",
+      "version": "2.3.0",
+      "license": "MIT",
+      "integrity": "sha512-JfJeIHke7y2egdGGgRAvpCwYFUsHlM2gPcrVOxFkznt/4uzQ7HFmvE63iFHVLBJNDuyDOQgijDK/tXH/f6Msjg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ts-dedent-2.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tsconfig-paths",
+      "version": "4.2.0",
+      "license": "MIT",
+      "integrity": "sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tsconfig-paths-4.2.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-tslib-2.8.1-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "typescript",
+      "version": "6.0.3",
+      "license": "Apache-2.0",
+      "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-typescript-6.0.3-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "undici-types",
+      "version": "7.16.0",
+      "license": "MIT",
+      "integrity": "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-undici-types-7.16.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "update-browserslist-db",
+      "version": "1.3.3",
+      "license": "MIT",
+      "integrity": "sha512-pJ2sYawQS0R/WI928Gj5GlPhTGzbMelq0+4INtSYNDV9ErKJcX6xjGWkoG/VnB3dpUm00zALaqkrUD77pO5TDQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-update-browserslist-db-1.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "use-sync-external-store",
+      "version": "1.7.0",
+      "license": "MIT",
+      "integrity": "sha512-6L+EeigHMQhdaIPNIFUKwfWJSwWFQ8gJbJ2DLOs5sDIegTwR9fRxvnM3uciHKjIZhFz+KAv2emhWMRvDmMcY8A==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-use-sync-external-store-1.7.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "vite",
+      "version": "8.3.0",
+      "license": "MIT",
+      "integrity": "sha512-lhZBVvEHefgE+HQZC9O7EBJgCU/nVzFNl7vkS4RE0APtWLP02/8QVIkQtzBxPquh7lq5/78NHipTj7ODQ6XuyQ==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-vite-8.3.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lightningcss-1.33.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-j2v/itmy4HlNxlc6voKXYgBqNi0Ng2LShg4z7GufpEgs05P+2suBVyi9I6YHq5uoVFx9ETin3eCEhLVyXGQnKg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA==",
+      "installed_on_build_host": false,
+      "notices": []
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "integrity": "sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-lightningcss-win32-x64-msvc-1.33.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "ws",
+      "version": "8.21.3",
+      "license": "MIT",
+      "integrity": "sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-ws-8.21.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "wsl-utils",
+      "version": "0.1.0",
+      "license": "MIT",
+      "integrity": "sha512-h3Fbisa2nKGPxCpm89Hk33lBLsnaGBvctQopaBSOW/uIs6FTe1ATyAnKFJrzVs9vpGdsTe73WF3V4lIsk4Gacw==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-wsl-utils-0.1.0-license"
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "name": "yallist",
+      "version": "3.1.1",
+      "license": "ISC",
+      "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==",
+      "installed_on_build_host": true,
+      "notices": [
+        "licenses/npm-yallist-3.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "license": "MIT",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "notices": [
+        "licenses/pypi-annotated-doc-0.0.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license": "MIT",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "notices": [
+        "licenses/pypi-annotated-types-0.8.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "anyio",
+      "version": "4.15.1",
+      "license": "MIT",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "notices": [
+        "licenses/pypi-anyio-4.15.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "build",
+      "version": "1.2.2.post1",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "1d61c0887fa860c01971625baae8bdd338e517b836a2f70dd1f7aa3a6b2fc5b5",
+      "notices": [
+        "licenses/pypi-build-1.2.2.post1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "certifi",
+      "version": "2026.7.22",
+      "license": "MPL-2.0",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "notices": [
+        "licenses/pypi-certifi-2026.7.22-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "click",
+      "version": "8.5.0",
+      "license": "BSD-3-Clause",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "notices": [
+        "licenses/pypi-click-8.5.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "colorama",
+      "version": "0.4.6",
+      "license": "OSI Approved :: BSD License",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "notices": [
+        "licenses/pypi-colorama-0.4.6-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "fastapi",
+      "version": "0.141.1",
+      "license": "MIT",
+      "sha256": "bfb91aa2d334c61cb35ba9a116fc123b3d3df31640b801cf57a7a78ec3f603b3",
+      "notices": [
+        "licenses/pypi-fastapi-0.141.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "greenlet",
+      "version": "3.5.6",
+      "license": "MIT AND PSF-2.0",
+      "sha256": "7ac4abb3877c43af320392c664774eef6fa2cc063c79a55fc02d844a3cbe7395",
+      "notices": [
+        "licenses/pypi-greenlet-3.5.6-LICENSE",
+        "licenses/pypi-greenlet-3.5.6-LICENSE.PSF"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "h11",
+      "version": "0.16.0",
+      "license": "MIT",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "notices": [
+        "licenses/pypi-h11-0.16.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "hatchling",
+      "version": "1.27.0",
+      "license": "MIT",
+      "sha256": "d3a2f3567c4f926ea39849cdf924c7e99e6686c9c8e288ae1037c8fa2a5d937b",
+      "notices": [
+        "licenses/pypi-hatchling-1.27.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "license": "BSD-3-Clause",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "notices": [
+        "licenses/pypi-httpcore-1.0.9-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "httpx",
+      "version": "0.28.1",
+      "license": "BSD-3-Clause",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "notices": [
+        "licenses/pypi-httpx-0.28.1-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "idna",
+      "version": "3.20",
+      "license": "BSD-3-Clause",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "notices": [
+        "licenses/pypi-idna-3.20-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "license": "MIT",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "notices": [
+        "licenses/pypi-iniconfig-2.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "license": "OSI Approved :: BSD License",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "notices": [
+        "licenses/pypi-Jinja2-3.1.6-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+      "notices": [
+        "licenses/pypi-markdown-it-py-4.2.0-LICENSE",
+        "licenses/pypi-markdown-it-py-4.2.0-LICENSE.markdown-it"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "license": "BSD-3-Clause",
+      "sha256": "26a5784ded40c9e318cfc2bdb30fe164bdb8665ded9cd64d500a34fb42067b1c",
+      "notices": [
+        "licenses/pypi-MarkupSafe-3.0.3-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "mdurl",
+      "version": "0.1.2",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "notices": [
+        "licenses/pypi-mdurl-0.1.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "packaging",
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "notices": [
+        "licenses/pypi-packaging-26.3-LICENSE",
+        "licenses/pypi-packaging-26.3-LICENSE.APACHE",
+        "licenses/pypi-packaging-26.3-LICENSE.BSD"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pathspec",
+      "version": "1.1.1",
+      "license": "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+      "sha256": "a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189",
+      "notices": [
+        "licenses/pypi-pathspec-1.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "playwright",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "sha256": "2f9a707a6c6c91157ed77bff2b8caeb04b3c8d46e70d585fc134298cbe4b5cc6",
+      "notices": [
+        "licenses/pypi-playwright-1.63.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "license": "MIT",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "notices": [
+        "licenses/pypi-pluggy-1.6.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pydantic",
+      "version": "2.13.5",
+      "license": "MIT",
+      "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "notices": [
+        "licenses/pypi-pydantic-2.13.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "license": "MIT",
+      "sha256": "5e81740c09e310f5aa5cbd3e434a01c154d4bef93241c7877b39f211d2b78ba8",
+      "notices": [
+        "licenses/pypi-pydantic_core-2.46.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pyee",
+      "version": "13.0.1",
+      "license": "MIT",
+      "sha256": "af2f8fede4171ef667dfded53f96e2ed0d6e6bd7ee3bb46437f77e3b57689228",
+      "notices": [
+        "licenses/pypi-pyee-13.0.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license": "BSD-2-Clause",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "notices": [
+        "licenses/pypi-Pygments-2.21.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pyproject_hooks",
+      "version": "1.3.3",
+      "license": "MIT",
+      "sha256": "5fc53fdac9f7bd63fbcdc868fb5f90b4784d78a53a3d3388cd738b807441a20b",
+      "notices": [
+        "licenses/pypi-pyproject_hooks-1.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pytest",
+      "version": "8.4.2",
+      "license": "MIT",
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+      "notices": [
+        "licenses/pypi-pytest-8.4.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "pytest-asyncio",
+      "version": "1.2.0",
+      "license": "Apache-2.0",
+      "sha256": "8e17ae5e46d8e7efe51ab6494dd2010f4ca8dae51652aa3c8d55acf50bfb2e99",
+      "notices": [
+        "licenses/pypi-pytest-asyncio-1.2.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license": "MIT",
+      "sha256": "5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b",
+      "notices": [
+        "licenses/pypi-PyYAML-6.0.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "rich",
+      "version": "15.0.0",
+      "license": "MIT",
+      "sha256": "33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb",
+      "notices": [
+        "licenses/pypi-rich-15.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "ruff",
+      "version": "0.13.2",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "17d95fb32218357c89355f6f6f9a804133e404fc1f65694372e02a557edf8585",
+      "notices": [
+        "licenses/pypi-ruff-0.13.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "shellingham",
+      "version": "1.5.4",
+      "license": "ISC License",
+      "sha256": "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686",
+      "notices": [
+        "licenses/pypi-shellingham-1.5.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "starlette",
+      "version": "1.7.0",
+      "license": "BSD-3-Clause",
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "notices": [
+        "licenses/pypi-starlette-1.7.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "trove-classifiers",
+      "version": "2026.9.21.13",
+      "license": "OSI Approved :: Apache Software License",
+      "sha256": "8b1ff4f9c191b1040b71c37f1e445ab99732911e3cd91de52838453a854d7a17",
+      "notices": [
+        "licenses/pypi-trove-classifiers-2026.9.21.13-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "typer",
+      "version": "0.27.2",
+      "license": "MIT",
+      "sha256": "b3a5fc4342d5fc8fda8fc3010b1cf117e9249aab7fae800c2eff62fd3842d97d",
+      "notices": [
+        "licenses/pypi-typer-0.27.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license": "PSF-2.0",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "notices": [
+        "licenses/pypi-typing_extensions-4.16.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "license": "MIT",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "notices": [
+        "licenses/pypi-typing-inspection-0.4.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "win",
+      "name": "uvicorn",
+      "version": "0.53.0",
+      "license": "BSD-3-Clause",
+      "sha256": "e8dca71ec86dce5f04e333f0d56cdedf942446e6643b9cea1af0d6d3a02cb03e",
+      "notices": [
+        "licenses/pypi-uvicorn-0.53.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "license": "MIT",
+      "sha256": "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101",
+      "notices": [
+        "licenses/pypi-annotated-doc-0.0.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license": "MIT",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "notices": [
+        "licenses/pypi-annotated-types-0.8.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "anyio",
+      "version": "4.15.1",
+      "license": "MIT",
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+      "notices": [
+        "licenses/pypi-anyio-4.15.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "build",
+      "version": "1.2.2.post1",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "1d61c0887fa860c01971625baae8bdd338e517b836a2f70dd1f7aa3a6b2fc5b5",
+      "notices": [
+        "licenses/pypi-build-1.2.2.post1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "certifi",
+      "version": "2026.7.22",
+      "license": "MPL-2.0",
+      "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+      "notices": [
+        "licenses/pypi-certifi-2026.7.22-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "click",
+      "version": "8.5.0",
+      "license": "BSD-3-Clause",
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+      "notices": [
+        "licenses/pypi-click-8.5.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "colorama",
+      "version": "0.4.6",
+      "license": "OSI Approved :: BSD License",
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+      "notices": [
+        "licenses/pypi-colorama-0.4.6-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "fastapi",
+      "version": "0.141.1",
+      "license": "MIT",
+      "sha256": "bfb91aa2d334c61cb35ba9a116fc123b3d3df31640b801cf57a7a78ec3f603b3",
+      "notices": [
+        "licenses/pypi-fastapi-0.141.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "greenlet",
+      "version": "3.2.5",
+      "license": "MIT AND Python-2.0",
+      "sha256": "45fcea7b697b91290b36eafc12fff479aca6ba6500d98ef6f34d5634c7119cbe",
+      "notices": [
+        "licenses/pypi-greenlet-3.2.5-LICENSE",
+        "licenses/pypi-greenlet-3.2.5-LICENSE.PSF"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "h11",
+      "version": "0.16.0",
+      "license": "MIT",
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+      "notices": [
+        "licenses/pypi-h11-0.16.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "hatchling",
+      "version": "1.27.0",
+      "license": "MIT",
+      "sha256": "d3a2f3567c4f926ea39849cdf924c7e99e6686c9c8e288ae1037c8fa2a5d937b",
+      "notices": [
+        "licenses/pypi-hatchling-1.27.0-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "license": "BSD-3-Clause",
+      "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+      "notices": [
+        "licenses/pypi-httpcore-1.0.9-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "httpx",
+      "version": "0.28.1",
+      "license": "BSD-3-Clause",
+      "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+      "notices": [
+        "licenses/pypi-httpx-0.28.1-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "idna",
+      "version": "3.20",
+      "license": "BSD-3-Clause",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c",
+      "notices": [
+        "licenses/pypi-idna-3.20-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "license": "MIT",
+      "sha256": "f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12",
+      "notices": [
+        "licenses/pypi-iniconfig-2.3.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "license": "OSI Approved :: BSD License",
+      "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+      "notices": [
+        "licenses/pypi-Jinja2-3.1.6-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+      "notices": [
+        "licenses/pypi-markdown-it-py-4.2.0-LICENSE",
+        "licenses/pypi-markdown-it-py-4.2.0-LICENSE.markdown-it"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "license": "BSD-3-Clause",
+      "sha256": "d6dd0be5b5b189d31db7cda48b91d7e0a9795f31430b7f271219ab30f1d3ac9d",
+      "notices": [
+        "licenses/pypi-MarkupSafe-3.0.3-LICENSE.txt"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "mdurl",
+      "version": "0.1.2",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+      "notices": [
+        "licenses/pypi-mdurl-0.1.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "packaging",
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "notices": [
+        "licenses/pypi-packaging-26.3-LICENSE",
+        "licenses/pypi-packaging-26.3-LICENSE.APACHE",
+        "licenses/pypi-packaging-26.3-LICENSE.BSD"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pathspec",
+      "version": "1.1.1",
+      "license": "OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+      "sha256": "a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189",
+      "notices": [
+        "licenses/pypi-pathspec-1.1.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "playwright",
+      "version": "1.63.0",
+      "license": "Apache-2.0",
+      "sha256": "ad21bc07516b187965a7521c5cf0df0bd657b17482eaad74335272d35a2b07de",
+      "notices": [
+        "licenses/pypi-playwright-1.63.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "license": "MIT",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "notices": [
+        "licenses/pypi-pluggy-1.6.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pydantic",
+      "version": "2.13.5",
+      "license": "MIT",
+      "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73",
+      "notices": [
+        "licenses/pypi-pydantic-2.13.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pydantic_core",
+      "version": "2.46.5",
+      "license": "MIT",
+      "sha256": "0fc5be0abd4a407e200d844b404e33639a554e7bd0d448e7b9ae181be4789ac2",
+      "notices": [
+        "licenses/pypi-pydantic_core-2.46.5-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pyee",
+      "version": "13.0.1",
+      "license": "MIT",
+      "sha256": "af2f8fede4171ef667dfded53f96e2ed0d6e6bd7ee3bb46437f77e3b57689228",
+      "notices": [
+        "licenses/pypi-pyee-13.0.1-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license": "BSD-2-Clause",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "notices": [
+        "licenses/pypi-Pygments-2.21.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pyproject_hooks",
+      "version": "1.3.3",
+      "license": "MIT",
+      "sha256": "5fc53fdac9f7bd63fbcdc868fb5f90b4784d78a53a3d3388cd738b807441a20b",
+      "notices": [
+        "licenses/pypi-pyproject_hooks-1.3.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pytest",
+      "version": "8.4.2",
+      "license": "MIT",
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+      "notices": [
+        "licenses/pypi-pytest-8.4.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "pytest-asyncio",
+      "version": "1.2.0",
+      "license": "Apache-2.0",
+      "sha256": "8e17ae5e46d8e7efe51ab6494dd2010f4ca8dae51652aa3c8d55acf50bfb2e99",
+      "notices": [
+        "licenses/pypi-pytest-asyncio-1.2.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "license": "MIT",
+      "sha256": "ba1cc08a7ccde2d2ec775841541641e4548226580ab850948cbfda66a1befcdc",
+      "notices": [
+        "licenses/pypi-PyYAML-6.0.3-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "rich",
+      "version": "15.0.0",
+      "license": "MIT",
+      "sha256": "33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb",
+      "notices": [
+        "licenses/pypi-rich-15.0.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "ruff",
+      "version": "0.13.2",
+      "license": "OSI Approved :: MIT License",
+      "sha256": "5bcb10276b69b3cfea3a102ca119ffe5c6ba3901e20e60cf9efb53fa417633c3",
+      "notices": [
+        "licenses/pypi-ruff-0.13.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "shellingham",
+      "version": "1.5.4",
+      "license": "ISC License",
+      "sha256": "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686",
+      "notices": [
+        "licenses/pypi-shellingham-1.5.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "starlette",
+      "version": "1.7.0",
+      "license": "BSD-3-Clause",
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e",
+      "notices": [
+        "licenses/pypi-starlette-1.7.0-LICENSE.md"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "trove-classifiers",
+      "version": "2026.9.21.13",
+      "license": "OSI Approved :: Apache Software License",
+      "sha256": "8b1ff4f9c191b1040b71c37f1e445ab99732911e3cd91de52838453a854d7a17",
+      "notices": [
+        "licenses/pypi-trove-classifiers-2026.9.21.13-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "typer",
+      "version": "0.27.2",
+      "license": "MIT",
+      "sha256": "b3a5fc4342d5fc8fda8fc3010b1cf117e9249aab7fae800c2eff62fd3842d97d",
+      "notices": [
+        "licenses/pypi-typer-0.27.2-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license": "PSF-2.0",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "notices": [
+        "licenses/pypi-typing_extensions-4.16.0-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "license": "MIT",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "notices": [
+        "licenses/pypi-typing-inspection-0.4.4-LICENSE"
+      ]
+    },
+    {
+      "ecosystem": "pypi",
+      "platform": "linux",
+      "name": "uvicorn",
+      "version": "0.53.0",
+      "license": "BSD-3-Clause",
+      "sha256": "e8dca71ec86dce5f04e333f0d56cdedf942446e6643b9cea1af0d6d3a02cb03e",
+      "notices": [
+        "licenses/pypi-uvicorn-0.53.0-LICENSE.md"
+      ]
+    }
+  ]
+}

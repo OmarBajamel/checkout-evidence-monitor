@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "version": "ASVS-5.0.0-subset-1",
+  "source_sha": "5cf9b032440be53ce345ab3c130fda46ba1ce7a2",
+  "license": "CC-BY-SA-4.0 for the ASVS-derived relationship data; original explanatory changes by Omar Ba Jamel with Codex assistance",
+  "relationships": [
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.3.1",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-003"
+      ],
+      "limitation": "Observed cookie flags/prefix are only a sample; cookie scope and all issuance paths need review.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.3.2",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-003"
+      ],
+      "limitation": "Appropriate SameSite behavior depends on cookie purpose and legitimate cross-site flows.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.3.4",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-003"
+      ],
+      "limitation": "An observed HttpOnly flag does not establish coverage of all sensitive cookies or token paths.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.4.1",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-001"
+      ],
+      "limitation": "An observed HSTS header does not cover every response or subdomain; HTTP fixtures are not applicable.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.4.3",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-002"
+      ],
+      "limitation": "Enforced/report-only policy metadata does not prove effective trust decisions or resistance to bypass.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.4.4",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-001"
+      ],
+      "limitation": "Observed nosniff metadata is partial evidence; response coverage is bounded.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.4.5",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-001"
+      ],
+      "limitation": "Referrer-policy headers need contextual review including element-level overrides.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "OWASP ASVS 5.0.0",
+      "id": "v5.0.0-3.6.1",
+      "relationship": "PARTIAL_SUPPORTING_EVIDENCE",
+      "rules": [
+        "OBS-008",
+        "OBS-009"
+      ],
+      "limitation": "Visible integrity metadata neither proves enforcement nor rules out documented alternative controls.",
+      "url": "https://github.com/OWASP/ASVS/blob/5cf9b032440be53ce345ab3c130fda46ba1ce7a2/5.0/en/0x12-V3-Web-Frontend-Security.md",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "standard": "PCI DSS 4.0.1",
+      "id": "6.4.3",
+      "relationship": "MANUAL_CONTEXT_ONLY",
+      "rules": [
+        "OBS-001",
+        "OBS-005",
+        "OBS-006",
+        "OBS-007",
+        "OBS-008",
+        "OBS-009"
+      ],
+      "limitation": "Approval, justification, operating controls, review cadence and conditional applicability require separate evidence. No PCI verdict is generated.",
+      "url": "https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming",
+      "license": "Official link and original rationale; proprietary requirement text not redistributed"
+    },
+    {
+      "standard": "PCI DSS 4.0.1",
+      "id": "11.6.1",
+      "relationship": "MANUAL_CONTEXT_ONLY",
+      "rules": [
+        "OBS-001",
+        "OBS-005",
+        "OBS-006",
+        "OBS-007",
+        "OBS-008",
+        "OBS-009"
+      ],
+      "limitation": "Approval, justification, operating controls, review cadence and conditional applicability require separate evidence. No PCI verdict is generated.",
+      "url": "https://blog.pcisecuritystandards.org/new-information-supplement-payment-page-security-and-preventing-e-skimming",
+      "license": "Official link and original rationale; proprietary requirement text not redistributed"
+    }
+  ]
+}

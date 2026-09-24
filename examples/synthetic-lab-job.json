@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "profile": "LAB",
+  "grant": {
+    "owner": "Local operator",
+    "assessor": "Local operator",
+    "profile": "LAB",
+    "fixture_id": "T01",
+    "origins": [
+      "https://shop.cem.test:8765",
+      "https://pay.cem.test:8766"
+    ],
+    "actions": [
+      "goto",
+      "click",
+      "fill",
+      "select",
+      "wait",
+      "assert",
+      "stop"
+    ],
+    "issued_at": "2000-01-01T00:00:00+00:00",
+    "expires_at": "2000-01-01T01:00:00+00:00",
+    "purpose": "SYNTHETIC_LOCAL_EVALUATION"
+  },
+  "steps": [
+    {
+      "id": "catalog",
+      "action": "goto",
+      "path": "/",
+      "expected_state": "catalog"
+    },
+    {
+      "id": "cart",
+      "action": "click",
+      "selector": "[data-cem='cart']",
+      "expected_state": "cart"
+    },
+    {
+      "id": "checkout",
+      "action": "click",
+      "selector": "[data-cem='checkout']",
+      "expected_state": "checkout"
+    },
+    {
+      "id": "stop",
+      "action": "stop",
+      "expected_state": "stopped"
+    }
+  ],
+  "arm": "JOURNEY",
+  "consent": "DECLINED",
+  "service_workers": "block",
+  "budgets": {
+    "steps": 20,
+    "redirects": 5,
+    "step_seconds": 30,
+    "run_seconds": 180,
+    "events": 500,
+    "body_bytes": 2097152,
+    "output_bytes": 52428800,
+    "cdp_sessions": 8
+  }
+}

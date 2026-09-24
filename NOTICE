@@ -1,0 +1,3 @@
+Checkout Evidence Monitor 0.1.0 — original source and vector artwork by Omar Ba Jamel, developed with Codex assistance, MIT.
+Exceptions: src/cem/data/asvs-subset.json and ASVS-derived relationship explanations are CC-BY-SA-4.0. Their source, version and adaptation notice are in src/cem/data/NOTICE and ASVS-LICENSE.md.
+The shadcn Button adaptation retains its MIT notice. The Playwright seccomp profile retains Apache-2.0 licensing. Bundled frontend third-party notices are in licenses/ and THIRD_PARTY_NOTICES.md. No third-party project endorses CEM. No environment fonts are redistributed.

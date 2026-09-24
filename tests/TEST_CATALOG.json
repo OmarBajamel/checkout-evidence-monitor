@@ -1,0 +1,511 @@
+{
+  "schema_version": "1.0",
+  "status": "AUTHORED_CATALOG; EXECUTION_RESULTS_RECORDED_SEPARATELY",
+  "cases": [
+    {
+      "id": "T01",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T01_identical_bodies_are_not_changes",
+          "line": 12
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T02",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T02_added_script_needs_complete_window",
+          "line": 18
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T03",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T03_origin_and_resource_are_grouped",
+          "line": 24
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T04",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T04_changed_bytes_keep_representation",
+          "line": 32
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T05",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T05_absence_requires_complete_candidate_window",
+          "line": 38
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T06",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T06_unreached_checkout_never_means_removal",
+          "line": 42
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T07",
+      "authored_assertions": [],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T08",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T08_dynamic_change_does_not_classify_intent",
+          "line": 86
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T09",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T09_consent_mismatch_refuses_diff",
+          "line": 92
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T10",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T10_missing_body_is_unknown",
+          "line": 100
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T11",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T11_frames_remain_distinct_and_partial",
+          "line": 107
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T12",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T12_redirect_needs_destination_grant",
+          "line": 14
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T13",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T13_report_only_is_not_enforced",
+          "line": 120
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T14",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T14_cookie_attribute_change_has_no_value",
+          "line": 135
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T15",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T15_attempt_is_not_delivery",
+          "line": 154
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T16",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T16_redaction_precedes_every_artifact",
+          "line": 20
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T17",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T17_private_redirect_denied_without_network",
+          "line": 44
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T18",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T18_ambiguous_authorities_refused",
+          "line": 62
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T19",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T19_service_worker_policy_refuses_equivalence",
+          "line": 170
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T20",
+      "authored_assertions": [
+        {
+          "path": "tests/unit/test_observations.py",
+          "function": "test_T20_caps_retain_records_and_qualify_absence",
+          "line": 176
+        }
+      ],
+      "additional_lab_parameterized_suite": "tests/browser/test_lab_scenarios.py",
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T21",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T21_html_and_csv_injection_are_inert",
+          "line": 67
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T22",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T22_integrity_orphan_and_retention",
+          "line": 23
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T23",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T23_order_selector_and_post_denied",
+          "line": 76
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T24",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T24_expired_public_json_and_phase_refusals",
+          "line": 85
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T25",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T25_token_host_origin_and_single_use",
+          "line": 38
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T26",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T26_paths_unknown_routes_and_bounded_errors",
+          "line": 53
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T27",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T27_loading_workbench_never_creates_run",
+          "line": 66
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T28",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T28_real_store_journey_evidence_export",
+          "line": 77
+        },
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T28_actual_baseline_comparison_filter_and_export",
+          "line": 95
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T29",
+      "authored_assertions": [
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T29_keyboard_navigation_dialog_and_widths",
+          "line": 119
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T30",
+      "authored_assertions": [
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T30_empty_error_partial_long_text",
+          "line": 166
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T31",
+      "authored_assertions": [
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T31_hostile_evidence_is_text",
+          "line": 200
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T32",
+      "authored_assertions": [
+        {
+          "path": "tests/integration/test_store_api.py",
+          "function": "test_T32_baseline_is_explicit_audited_and_profiles_refused",
+          "line": 90
+        },
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T32_mobile_evidence_back_preserves_comparison",
+          "line": 215
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T33",
+      "authored_assertions": [
+        {
+          "path": "tests/ui/test_workbench.py",
+          "function": "test_T33_fixture_labelled_screenshots",
+          "line": 232
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T34",
+      "authored_assertions": [
+        {
+          "path": "tests/security/test_boundaries.py",
+          "function": "test_T34_changed_snapshot_and_absent_permission_deny",
+          "line": 101
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T35",
+      "authored_assertions": [
+        {
+          "path": "tests/publication/test_publication.py",
+          "function": "test_T35_public_path_secrets_and_concept_provenance",
+          "line": 13
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T36",
+      "authored_assertions": [
+        {
+          "path": "tests/publication/test_publication.py",
+          "function": "test_T36_mock_publication_requires_every_binding",
+          "line": 37
+        },
+        {
+          "path": "tests/publication/test_publication.py",
+          "function": "test_T36_test_outcome_must_match_explicit_publication_plan",
+          "line": 88
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T37",
+      "authored_assertions": [
+        {
+          "path": "tests/publication/test_publication.py",
+          "function": "test_T37_finished_content_has_truthful_readiness",
+          "line": 126
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    },
+    {
+      "id": "T38",
+      "authored_assertions": [
+        {
+          "path": "tests/publication/test_publication.py",
+          "function": "test_T38_source_changes_invalidate_tests_without_publishing",
+          "line": 158
+        }
+      ],
+      "additional_lab_parameterized_suite": null,
+      "status": "SEE_EXECUTION_REPORT",
+      "runtime": "SEE_EXECUTION_REPORT; DO_NOT_INFER_PASS_FROM_AUTHORED_ASSERTIONS"
+    }
+  ],
+  "notice": "Source AST inventory only; no pytest discovery or test execution.",
+  "execution_report": "docs/TESTING_STATUS.md"
+}

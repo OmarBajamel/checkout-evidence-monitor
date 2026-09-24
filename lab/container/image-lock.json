@@ -1,0 +1,9 @@
+{
+  "base": "mcr.microsoft.com/playwright/python:v1.63.0-noble",
+  "digest": "sha256:72bd171a9ffc2b4b59532aaa6210e21014d07093120dc25528870c0b840da1f0",
+  "seccomp_source": "https://github.com/microsoft/playwright/blob/1b025d7e20a026371cd5f98ba0cdce48892737c8/utils/docker/seccomp_profile.json",
+  "seccomp_sha256": "55b97e6a610f2830ae1c046963430409b80bf76c9ca9dae0b906c51e3db0e07d",
+  "status": "PINNED_BUILD_INPUTS_WITH_APPROVED_LOCAL_SECCOMP_ADAPTATION",
+  "seccomp_upstream_sha256": "cc3e61cabda6bbc1e53e54d27ba4d55a9d3be829b6dd1a596f4a7b31b1cc7849",
+  "seccomp_adaptation": "One additional chroot allow rule for Chromium user-namespace sandbox; no container capabilities added."
+}

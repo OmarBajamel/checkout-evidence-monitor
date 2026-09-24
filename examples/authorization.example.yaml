@@ -1,0 +1,19 @@
+# EXAMPLE ONLY — NOT AN AUTHORIZATION. The implementation must validate real runtime input.
+schema_version: "1.0"
+authorized: false
+profile: LAB
+assessor: null
+owner_assertion: null
+issued_at_utc: null
+expires_at_utc: null
+allowed_origins:
+  - "http://127.0.0.1:8765"
+  - "http://127.0.0.1:8766"
+allowed_action_classes:
+  - observe
+  - synthetic_cart_change
+allow_real_payment: false
+allow_real_order_submission: false
+allow_account_creation: false
+allow_external_network: false
+notes: "Only the exact controlled fixture endpoints may be allowed in a later authorized local test."

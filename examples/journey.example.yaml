@@ -1,0 +1,23 @@
+# Illustrative proposed schema, to finalize during research. Not runnable in this kit.
+schema_version: "1.0"
+journey_id: "synthetic-checkout-v1"
+profile: LAB
+consent_profile: "reject-optional"
+steps:
+  - id: "open-product"
+    action: "navigate"
+    url: "http://127.0.0.1:8765/product"
+    expected_state: "synthetic-product-visible"
+  - id: "add-synthetic-item"
+    action: "click"
+    selector: '[data-testid="add-to-cart"]'
+    authorization_class: "synthetic_cart_change"
+    expected_state: "synthetic-cart-ready"
+  - id: "reach-checkout"
+    action: "navigate"
+    url: "http://127.0.0.1:8765/checkout"
+    expected_state: "synthetic-checkout-visible"
+  - id: "observe-only"
+    action: "observe"
+    duration_ms: 2000
+    stop_before: "order-or-payment-submission"

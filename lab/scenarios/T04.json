@@ -1,0 +1,18 @@
+{
+  "id": "T04",
+  "title": "Changed base script bytes",
+  "fixture_version": "fixture-1",
+  "expected_journey_states": [
+    "catalog",
+    "cart",
+    "checkout"
+  ],
+  "script_names": [
+    "base",
+    "checkout"
+  ],
+  "expected_observation": "changed",
+  "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+  "measured": false,
+  "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+}

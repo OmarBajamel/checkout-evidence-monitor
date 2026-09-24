@@ -1,0 +1,19 @@
+{
+  "id": "T07",
+  "title": "Delayed script within window",
+  "fixture_version": "fixture-1",
+  "expected_journey_states": [
+    "catalog",
+    "cart",
+    "checkout"
+  ],
+  "script_names": [
+    "base",
+    "checkout",
+    "delayed"
+  ],
+  "expected_observation": "delayed",
+  "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+  "measured": false,
+  "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+}

@@ -1,0 +1,10 @@
+flowchart LR
+  L[Network-none synthetic LAB] --> C[Same-session CDP evidence]
+  I[Explicit bounded JSON import] --> S[Sanitize]
+  C --> S
+  S --> D[SQLite + hashed sanitized artifacts]
+  D --> R[Profile comparison + OBS-001–012]
+  D --> A[Protected loopback API]
+  R --> A
+  A --> U[Assessments / Journey / Changes / Evidence]
+  R --> E[Offline JSON / HTML / CSV]

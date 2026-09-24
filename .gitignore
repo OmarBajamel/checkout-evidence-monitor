@@ -1,0 +1,49 @@
+# Research cache and future local/private runtime data
+.research-cache/
+.venv/
+.build-tools/
+.cem-data/
+.cem-demo/
+/publication/export/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.secrets/
+private/
+runtime-data/
+artifacts/
+*.sqlite
+*.sqlite3
+*.db
+storage-state*.json
+playwright/.auth/
+node_modules/
+dist/
+build/
+*.egg-info/
+# Local versioning may preserve work, but public export must separately allowlist sanitized metadata and exclude private scope/approval/handoff records.
+
+# v2 private orchestration and editorial drafts (audit public export independently)
+.cem-private/
+state/
+/publication/
+/content/linkedin/
+research/SOURCE_LEDGER.json
+research/APPROVAL_SUMMARY.md
+research/SCOPE_LOCK.json
+research/CLAIM_AUDIT.csv
+research/V2_MIGRATION_REVIEW.md
+.agents/
+.codex/
+.research-cache/
+playwright-report/
+test-results/
+coverage/
+.storybook-cache/
+storybook-static/
+web/dist/
+.DS_Store
+*.log
+# A .gitignore is not secret scanning and does not remove files already tracked in git.

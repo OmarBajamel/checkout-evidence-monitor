@@ -1,0 +1,435 @@
+{
+  "schema_version": "1.0",
+  "status": "AUTHORED_NOT_EXECUTED",
+  "scenarios": [
+    {
+      "id": "T01",
+      "title": "Identical visits",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "unchanged",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T02",
+      "title": "New same-origin checkout script",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "extra"
+      ],
+      "expected_observation": "added",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T03",
+      "title": "New mock provider origin",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "provider"
+      ],
+      "expected_observation": "added_origin",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T04",
+      "title": "Changed base script bytes",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "changed",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T05",
+      "title": "Checkout script absent",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "not_observed",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T06",
+      "title": "Checkout unreachable",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "coverage_unknown",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T07",
+      "title": "Delayed script within window",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "delayed"
+      ],
+      "expected_observation": "delayed",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T08",
+      "title": "Legitimate randomized script",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "dynamic"
+      ],
+      "expected_observation": "dynamic_change_not_malicious",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T09",
+      "title": "Consent profile differs",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "profile_mismatch",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T10",
+      "title": "Oversized script",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "large"
+      ],
+      "expected_observation": "missing_body",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T11",
+      "title": "Mock provider frame",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "provider"
+      ],
+      "expected_observation": "frame_partial",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T12",
+      "title": "Redirect to mock provider",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart"
+      ],
+      "script_names": [
+        "base",
+        "provider"
+      ],
+      "expected_observation": "scope_redirect",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T13",
+      "title": "Report-only CSP",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "report_only",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T14",
+      "title": "Session cookie missing flags",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "cookie_attributes",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T15",
+      "title": "Insecure script attempt",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "provider"
+      ],
+      "expected_observation": "attempt_not_delivery",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T16",
+      "title": "Dummy secrets in URL",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "extra"
+      ],
+      "expected_observation": "redaction",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T17",
+      "title": "Metadata-address redirect mock",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "denied_before_connection",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T18",
+      "title": "IPv6/alternate host redirect mock",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "denied_before_connection",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T19",
+      "title": "SW policy variants",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "sw-only"
+      ],
+      "expected_observation": "visibility_mismatch",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+    },
+    {
+      "id": "T20",
+      "title": "Bounded runaway events",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout",
+        "extra"
+      ],
+      "expected_observation": "partial_cap",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T21",
+      "title": "Inert hostile-looking text",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "output_safety",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T22",
+      "title": "Storage corruption/interruption",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart",
+        "checkout"
+      ],
+      "script_names": [
+        "base",
+        "checkout"
+      ],
+      "expected_observation": "integrity_failure",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T23",
+      "title": "Forbidden synthetic order action",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog",
+        "cart"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "action_denied",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    },
+    {
+      "id": "T24",
+      "title": "Invalid grant/import/phase",
+      "fixture_version": "fixture-1",
+      "expected_journey_states": [
+        "catalog"
+      ],
+      "script_names": [
+        "base"
+      ],
+      "expected_observation": "fail_closed",
+      "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+      "measured": false,
+      "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+    }
+  ]
+}

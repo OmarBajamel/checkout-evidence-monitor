@@ -1,0 +1,29 @@
+# Illustrative proposed schema. No live scan permission and no startup side effects.
+schema_version: "1.0"
+mode: LAB
+browser: chromium
+locale: en-US
+viewport:
+  width: 1365
+  height: 768
+service_workers: block
+consent_profile: reject-optional
+authentication_class: anonymous
+limits:
+  max_journey_steps: 20
+  step_timeout_seconds: 30
+  run_timeout_seconds: 180
+  max_redirects_per_transition: 5
+  max_events: 500
+  max_script_bytes: 2097152
+  max_artifact_bytes: 52428800
+privacy:
+  persist_script_source: false
+  redact_query_values: true
+  persist_cookie_values: false
+  screenshots: false
+  har: false
+  trace: false
+  video: false
+llm:
+  enabled: false

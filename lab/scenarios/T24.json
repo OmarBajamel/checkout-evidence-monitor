@@ -1,0 +1,15 @@
+{
+  "id": "T24",
+  "title": "Invalid grant/import/phase",
+  "fixture_version": "fixture-1",
+  "expected_journey_states": [
+    "catalog"
+  ],
+  "script_names": [
+    "base"
+  ],
+  "expected_observation": "fail_closed",
+  "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+  "measured": false,
+  "benchmark_applicability": "SAFETY_CORRECTNESS_ONLY"
+}

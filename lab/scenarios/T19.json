@@ -1,0 +1,19 @@
+{
+  "id": "T19",
+  "title": "SW policy variants",
+  "fixture_version": "fixture-1",
+  "expected_journey_states": [
+    "catalog",
+    "cart",
+    "checkout"
+  ],
+  "script_names": [
+    "base",
+    "checkout",
+    "sw-only"
+  ],
+  "expected_observation": "visibility_mismatch",
+  "label_source": "lab/fixtures/server.py plus authored API/storage/safety mutations",
+  "measured": false,
+  "benchmark_applicability": "THREE_ARMS_WITH_CAPABILITY_LABELS"
+}

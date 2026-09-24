@@ -1,0 +1,28 @@
+{
+  "steps": [
+    {
+      "id": "catalog",
+      "action": "goto",
+      "path": "/",
+      "expected_state": "catalog"
+    },
+    {
+      "id": "cart",
+      "action": "click",
+      "selector": "[data-cem='cart']",
+      "expected_state": "cart"
+    },
+    {
+      "id": "checkout",
+      "action": "click",
+      "selector": "[data-cem='checkout']",
+      "expected_state": "checkout"
+    },
+    {
+      "id": "stop",
+      "action": "stop",
+      "expected_state": "stopped"
+    }
+  ],
+  "notice": "Exact declarative steps; grant must be issued separately."
+}

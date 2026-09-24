@@ -1,0 +1,13 @@
+{
+  "architecture": "amd64",
+  "packages": [{
+    "name": "libnss3-tools",
+    "version": "2:3.98-1ubuntu0.2",
+    "url": "https://security.ubuntu.com/ubuntu/pool/main/n/nss/libnss3-tools_3.98-1ubuntu0.2_amd64.deb",
+    "sha256": "e5b42390b02c21851bc04e9557ec48539a913f9b09637220c4b1db0d1386b3fb",
+    "metadata_source": "https://packages.ubuntu.com/noble/amd64/libnss3-tools/download",
+    "filename": "libnss3-tools.deb",
+    "purpose": "certutil for synthetic local NSS trust database; extract only, no maintainer scripts",
+    "runtime_dependencies_from_metadata": ["libc6 >=2.34", "libnspr4 >=2:4.34", "libnss3 >=2:3.94", "zlib1g >=1:1.1.4"]
+  }]
+}
