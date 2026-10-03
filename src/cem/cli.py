@@ -108,13 +108,17 @@ def collect_job(job_file: Path, profile: str = "LAB"):
 
 
 @app.command("ui")
-def ui(port: int = 8760, demo: bool = False):
+def ui(port: int = 8760, demo: bool = False, monitor: bool = False):
     from .api import Session, create_app
     import uvicorn
 
     if not 1024 <= port <= 65535:
         raise CEMError("INVALID_INPUT", "Choose an unprivileged local port.")
     s = store()
+    if monitor:
+        if demo:
+            raise CEMError("READ_ONLY_DEMO", "The synthetic demo cannot start pilot monitoring.")
+        require_runtime(Path.cwd(), profile="PILOT")
     if demo:
         from .demo import demo_store
 
@@ -125,7 +129,7 @@ def ui(port: int = 8760, demo: bool = False):
         f"Local bootstrap (expires in 60 seconds): http://127.0.0.1:{port}/#bootstrap={session.bootstrap}"
     )
     uvicorn.run(
-        create_app(s, session, port),
+        create_app(s, session, port, monitor_root=Path.cwd() if monitor else None),
         host="127.0.0.1",
         port=port,
         access_log=False,

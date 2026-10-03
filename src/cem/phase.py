@@ -57,14 +57,20 @@ def require_runtime(root: Path | None = None, *, profile="OFFLINE"):
         if not p.is_file() or p.is_symlink() or p.stat().st_size > 8192:
             raise ValueError()
         d = json.loads(p.read_text(encoding="utf-8"))
-        if d.get("instruction", "").upper() != "TEST APPROVED" or d.get("profile") not in (
-            profile,
-            "OFFLINE_AND_LAB",
+        allowed = {
+            "OFFLINE": {"OFFLINE", "OFFLINE_AND_LAB", "PILOT"},
+            "LAB": {"LAB", "OFFLINE_AND_LAB"},
+            "PILOT": {"PILOT"},
+        }
+        if d.get("instruction", "").upper() != "TEST APPROVED" or d.get("profile") not in allowed.get(
+            profile, set()
         ):
             raise ValueError()
         if datetime.fromisoformat(d["expires_at"]) <= datetime.now(timezone.utc):
             raise ValueError()
         if d["source_snapshot"] != source_snapshot(root):
+            raise ValueError()
+        if profile == "PILOT" and d.get("pilot_boundary_accepted") is not True:
             raise ValueError()
         a = root / "state/APPROVAL_RECORD.json"
         if a.exists() and not json.loads(a.read_text(encoding="utf-8-sig"))["testing"]["authorized"]:

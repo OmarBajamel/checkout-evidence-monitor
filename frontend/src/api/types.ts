@@ -29,4 +29,5 @@ export interface Integrity {state:string;expected_sha256:string;actual_sha256:st
 export interface EvidenceDetail {schema_version:string;run_id:string;profile:Profile;provenance:string;run_status:string;integrity:Integrity;record:EvidenceRecord;preview:string;preview_truncated:boolean;preview_total_bytes:number;findings:Finding[]}
 export interface RunPage {items:Run[];total:number;limit:number;offset:number;demo:boolean}
 export interface RunDetail {run:Run;integrity:Integrity;findings:Finding[];demo:boolean}
-export interface Journey {run_id:string;profile:Profile;steps:StepResult[];frames:Run['frames'];evidence:EvidenceRecord[];complete_states:string[];limitation_codes:string[];provenance:string}
+export interface PilotContext {target_id:string;configuration_version:number;configuration_sha256:string;approved_origins:string[];issued_at:string;expires_at:string;purpose:string;actions:string[];notice:string}
+export interface Journey {pilot_context?:PilotContext|null;run_id:string;profile:Profile;steps:StepResult[];frames:Run['frames'];evidence:EvidenceRecord[];complete_states:string[];limitation_codes:string[];provenance:string}

@@ -57,7 +57,7 @@ def workbench(tmp_path, root):
             browser = p.chromium.launch(
                 headless=True, args=["--disable-background-networking", "--disable-sync"]
             )
-            environment = root / "reports/testing/browser_environment.json"
+            environment = root / "reports/testing/v1.1/browser_environment.json"
             environment.parent.mkdir(parents=True, exist_ok=True)
             environment.write_text(
                 json.dumps(
@@ -82,7 +82,7 @@ def workbench(tmp_path, root):
                 )
                 page = context.new_page()
                 page.goto("http://127.0.0.1:8760/#bootstrap=" + bootstrap)
-                expect(page.get_by_role("heading", name="Assessments", exact=True)).to_be_visible()
+                expect(page.get_by_role("heading", name="Your review workspace.", exact=True)).to_be_visible()
                 yield page, a, b, mismatch, partial
             finally:
                 browser.close()
@@ -94,19 +94,21 @@ def workbench(tmp_path, root):
 
 def test_T28_actual_baseline_comparison_filter_and_export(workbench, tmp_path):
     page, a, b, _, _ = workbench
-    row = page.locator("tr").filter(has=page.get_by_role("button", name=a.label, exact=True))
-    row.get_by_role("button", name="Select baseline", exact=True).click()
+    row = page.locator(".record-card").filter(has=page.get_by_role("button", name=a.label, exact=True))
+    page.get_by_label("Select " + a.label, exact=True).check()
+    page.get_by_role("button", name="Select saved baseline", exact=True).click()
     page.get_by_label("Selection reason").fill("Synthetic UI verification baseline")
+    page.get_by_role("button", name="Review selection", exact=True).click()
     page.get_by_role("button", name="Confirm baseline", exact=True).click()
-    expect(row.get_by_text("Selected baseline", exact=True)).to_be_visible()
+    expect(row.get_by_text("Saved baseline · comparison reference", exact=True)).to_be_visible()
     page.get_by_label("Select " + a.label, exact=True).check()
     page.get_by_label("Select " + b.label, exact=True).check()
     page.get_by_role("button", name="Compare selected", exact=False).click()
-    page.get_by_role("button", name="ADDED", exact=True).click()
+    page.get_by_role("button", name="ADDED · 1", exact=True).click()
     expect(page.locator(".change-row")).to_have_count(1)
     page.locator(".change-row").first.click()
-    expect(page.locator(".evidence-panel")).to_contain_text("extra.js")
-    page.get_by_role("button", name="Open evidence record", exact=False).click()
+    expect(page.locator(".comparison-evidence")).to_contain_text("extra.js")
+    page.get_by_role("button", name="Open candidate evidence", exact=False).click()
     with page.expect_download() as saved:
         page.get_by_role("button", name="Export report", exact=False).click()
     target = tmp_path / "ui-export.html"
@@ -120,10 +122,11 @@ def test_T29_keyboard_navigation_dialog_and_widths(workbench, root):
     page, a, b, _, _ = workbench
     page.keyboard.press("Tab")
     expect(page.get_by_text("Skip to evidence workspace")).to_be_focused()
-    trigger = page.get_by_role("button", name="Select baseline", exact=True).first
+    page.get_by_label("Select " + a.label, exact=True).check()
+    trigger = page.get_by_role("button", name="Select saved baseline", exact=True).first
     trigger.focus()
     page.keyboard.press("Enter")
-    expect(page.get_by_role("dialog", name="Select a baseline")).to_be_visible()
+    expect(page.get_by_role("dialog", name="Select a saved baseline")).to_be_visible()
     expect(page.get_by_label("Selection reason")).to_be_focused()
     modal_records = []
     for width, height in ((1440, 900), (1024, 768), (390, 844)):
@@ -133,7 +136,7 @@ def test_T29_keyboard_navigation_dialog_and_widths(workbench, root):
         assert abs(bounds["x"] + bounds["width"] / 2 - width / 2) <= 2
         assert abs(bounds["y"] + bounds["height"] / 2 - height / 2) <= 2
         assert bounds["x"] >= 15 and bounds["y"] >= 15
-        path = root / "reports/screenshots" / f"baseline-dialog-{width}.png"
+        path = root / "reports/testing/v1.1/screenshots" / f"baseline-dialog-{width}.png"
         path.parent.mkdir(parents=True, exist_ok=True)
         page.screenshot(path=str(path), full_page=True)
         modal_records.append(
@@ -151,7 +154,7 @@ def test_T29_keyboard_navigation_dialog_and_widths(workbench, root):
         json.dumps(modal_records, indent=2), encoding="utf-8"
     )
     page.keyboard.press("Escape")
-    expect(page.get_by_role("dialog", name="Select a baseline")).not_to_be_visible()
+    expect(page.get_by_role("dialog", name="Select a saved baseline")).not_to_be_visible()
     expect(trigger).to_be_focused()
     for width, height in ((1440, 900), (1024, 768), (390, 844)):
         page.set_viewport_size({"width": width, "height": height})
@@ -160,7 +163,7 @@ def test_T29_keyboard_navigation_dialog_and_widths(workbench, root):
     expect(page.get_by_label("Baseline", exact=True)).to_be_visible()
     page.get_by_label("Baseline", exact=True).select_option(a.id)
     page.get_by_label("Candidate", exact=True).select_option(b.id)
-    expect(page.get_by_role("button", name="ALL", exact=True)).to_be_visible()
+    expect(page.get_by_role("button", name="ALL ·", exact=False)).to_be_visible()
 
 
 def test_T30_empty_error_partial_long_text(workbench):
@@ -221,9 +224,10 @@ def test_T32_mobile_evidence_back_preserves_comparison(workbench):
     )
     expect(page.locator(".change-row")).to_have_count(1)
     page.locator(".change-row").click()
-    expect(page.get_by_role("heading", name="Evidence", exact=True)).to_be_visible()
+    page.get_by_role("button", name="Open candidate evidence", exact=False).click()
+    expect(page.get_by_role("heading", name="Evidence, in full context.", exact=True)).to_be_visible()
     page.get_by_role("button", name="Back to comparison", exact=True).click()
-    expect(page.get_by_role("button", name="ADDED", exact=True)).to_have_attribute("aria-pressed", "true")
+    expect(page.get_by_role("button", name="ADDED · 1", exact=True)).to_have_attribute("aria-pressed", "true")
     expect(page.locator(".change-row")).to_have_attribute("aria-pressed", "true")
     page.get_by_label("Candidate", exact=True).select_option(mismatch.id)
     expect(page.get_by_text("These visits are not comparable")).to_be_visible()
@@ -231,7 +235,7 @@ def test_T32_mobile_evidence_back_preserves_comparison(workbench):
 
 def test_T33_fixture_labelled_screenshots(workbench, root):
     page, a, b, mismatch, partial = workbench
-    out = root / "reports/screenshots"
+    out = root / "reports/testing/v1.1/screenshots"
     out.mkdir(parents=True, exist_ok=True)
     manifest = []
     for width, height in ((1440, 900), (1024, 768), (390, 844)):
@@ -248,17 +252,23 @@ def test_T33_fixture_labelled_screenshots(workbench, root):
             page.evaluate(
                 '(path)=>{history.pushState(null,"",path);dispatchEvent(new PopStateEvent("popstate"))}', path
             )
-            heading = {"partial": "Journey", "incompatible": "Changes", "missing-body": "Evidence"}.get(
-                name, name.capitalize()
-            )
+            heading = {
+                "assessments": "Your review workspace.",
+                "journey": "Trace the recorded journey.",
+                "partial": "Trace the recorded journey.",
+                "changes": "Changes, with receipts.",
+                "incompatible": "Changes, with receipts.",
+                "evidence": "Evidence, in full context.",
+                "missing-body": "Evidence, in full context.",
+            }[name]
             expect(page.get_by_role("heading", name=heading, exact=True)).to_be_visible()
             expect(page.get_by_text("Loading local records…")).to_have_count(0)
             if name == "journey":
-                page.locator(".stage-list button").filter(has_text="Checkout").click()
+                page.locator(".stage-list button").filter(has_text="checkout").click()
                 expect(page.get_by_text("No evidence linked to this step.")).to_have_count(0)
             if name == "changes" and width >= 768:
                 page.locator(".change-row").first.click()
-                expect(page.locator(".evidence-panel")).to_contain_text("checkout.js")
+                expect(page.locator(".comparison-evidence")).to_contain_text("checkout.js")
             file = out / f"{name}-{width}.png"
             page.screenshot(path=str(file), full_page=True)
             manifest.append(

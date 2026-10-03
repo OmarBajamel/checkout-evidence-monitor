@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "scope": "Public artwork subset; original private editorial packages are not included.",
+  "scope": "Historical v0.1 artwork subset retained for provenance. Current alpha uses assets/signal. Checksums below describe this exported tree.",
   "assets": [
     {
       "id": "A04",
@@ -15,8 +15,8 @@
       "review_status": "SOURCE_READ",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/BRAND_GUIDE.md",
-      "sha256": "97e8e6f8129e3eb65b5452d36a8188d158b0f776d90992fc3ab32994f43d6857",
-      "bytes": 2002,
+      "sha256": "dadf6a994d41eb852bbc9a9a7cc464356b05e77ec9096cdfde6b91582bac61ce",
+      "bytes": 2158,
       "updated_at_utc": "2026-09-24T19:52:42.928630+00:00"
     },
     {
@@ -64,8 +64,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/favicon/favicon.svg",
-      "sha256": "9c5c9de6d230add095ac96c6cfc00c0a2b40c7c51c69c49b73fcb7e410b7bcfa",
-      "bytes": 408
+      "sha256": "adcc59e2fc16a82c4e330e30f4dee21ffbd187ba4bfd1e0308d61cc0796a9744",
+      "bytes": 407
     },
     {
       "id": "A02",
@@ -96,8 +96,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/logo/lockup.svg",
-      "sha256": "45c5bd618e73eb21cbce220d16466d6ef905926dbc3d1dfea8232d7e0bfc2112",
-      "bytes": 558
+      "sha256": "eefd124d1c2ccf34c93e6655513e1424a34c610d279f6784c84af14fc49e2e01",
+      "bytes": 557
     },
     {
       "id": "A01",
@@ -144,8 +144,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/logo/mark-monochrome.svg",
-      "sha256": "7288dd8ab4785d6c24400d04c0a72f4f0c18c0f20eb8a5512429654f1c5bad3e",
-      "bytes": 341
+      "sha256": "049dcca5ab055ff8c713e96089482f7122e605a32cf81fbfa4db689f41dff5ab",
+      "bytes": 340
     },
     {
       "id": "A01",
@@ -176,8 +176,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/logo/mark-reversed.svg",
-      "sha256": "d13e97897e8d2e11e1ed7e11a532bda02577878b9d69bc293b1a29e46f8a6312",
-      "bytes": 341
+      "sha256": "40b1a7465393c10c125588dd630b76bb4b42766fa57eab18204d8564e3199912",
+      "bytes": 340
     },
     {
       "id": "A01",
@@ -192,8 +192,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/logo/mark.svg",
-      "sha256": "e11998a13d73a859c4e2b49329350f5920a19f3e70924f9101cc1f582b2fd20b",
-      "bytes": 341
+      "sha256": "348d8dd063c6a17e5bb3b039995d24deab5052d6580105ea1d655df46138a9ee",
+      "bytes": 340
     },
     {
       "id": "A02",
@@ -224,8 +224,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/logo/wordmark.svg",
-      "sha256": "b9886e4f2cfe4e489156f6e9c672a28f33177453ea5c9ba882f508306bb0b99d",
-      "bytes": 369
+      "sha256": "790726f7c41abbff1316fbf314acd26174fed2b69c6005ff1ebb42b0ef9f3ae9",
+      "bytes": 368
     },
     {
       "id": "A04",
@@ -240,8 +240,8 @@
       "review_status": "SOURCE_READ",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/brand/tokens.json",
-      "sha256": "a373e885d29b016232323bf0ec0d602ddce8786627f85ac45b72c7a79e3db38b",
-      "bytes": 616
+      "sha256": "d5b3097bf104570ccd88720d397c35f4542b22ec0ee49072e9f51f1deb48114c",
+      "bytes": 593
     },
     {
       "id": "A10",
@@ -272,8 +272,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/concepts/changes-landscape.svg",
-      "sha256": "ce0ce87acaeb4366def31473a4265cdce336583c2a768f7415c10da1c9f0e204",
-      "bytes": 1906
+      "sha256": "9dfb92df690d371ede9045f4eb07f07170b79af370984cab1a0d099fb57c1cd9",
+      "bytes": 1905
     },
     {
       "id": "A10",
@@ -304,8 +304,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/concepts/changes-portrait.svg",
-      "sha256": "577c9d3b50f4ef416febb22877a5b208f7ec29d57eee4a825be03fae0e57acaa",
-      "bytes": 2218
+      "sha256": "4f099aa96f5c722be56cd2bed852322e57022e2c8cdb7feaaca4866594b4fabd",
+      "bytes": 2217
     },
     {
       "id": "A06",
@@ -320,8 +320,8 @@
       "review_status": "SOURCE_READ",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/readme/architecture.mmd",
-      "sha256": "0043e1fcc8eea4f11e8fa3ae08fe06a2214cb018ea19d1c1d808faedb17aec79",
-      "bytes": 376,
+      "sha256": "b510a2c84210cd6947c3b027e0819cf3fd3d75ad31c79cfc8fcddab450dfee09",
+      "bytes": 366,
       "updated_at_utc": "2026-09-24T19:52:42.928630+00:00"
     },
     {
@@ -354,8 +354,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/readme/architecture.svg",
-      "sha256": "cb63e65e2ec24491d35802a8bbf58c8d4cdaf6c09bfe07d1c21f003c247803ad",
-      "bytes": 2869,
+      "sha256": "851ce66e190b71b59d221adac392a1e8b4ffd8a8b9c05d9f4564a21dac014167",
+      "bytes": 2868,
       "updated_at_utc": "2026-09-24T19:52:42.928630+00:00"
     },
     {
@@ -390,8 +390,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/readme/github-social.svg",
-      "sha256": "435cf181ab7fac968f9389793800d3ae82036aefaef7977a26d713adf5793440",
-      "bytes": 1377,
+      "sha256": "62e585f37f7753bd45f17b8dc8a547457eeb533e28959dc09ba32fc916160ee6",
+      "bytes": 1376,
       "readiness": "STALE_STATUS_ARTWORK_REQUIRES_REFRESH",
       "ready_for_owner_review": false,
       "updated_at_utc": "2026-09-24T19:52:42.928630+00:00"
@@ -428,8 +428,8 @@
       "review_status": "ARTWORK_INSPECTED_VIA_PNG_AND_INERT_SOURCE",
       "visual_app_verification": "See docs/TESTING_STATUS.md; artwork itself is not runtime evidence",
       "path": "assets/readme/readme-hero.svg",
-      "sha256": "6f49118beae6623daecc0daf5852f0fb754724bd0683f5849e111a7eb791f035",
-      "bytes": 2052,
+      "sha256": "123a1750c3f7d73d354cba31fc2348ddde77b3854ca645210d5550755c69d52c",
+      "bytes": 2051,
       "readiness": "STALE_STATUS_ARTWORK_REQUIRES_REFRESH",
       "ready_for_owner_review": false,
       "updated_at_utc": "2026-09-24T19:52:42.928630+00:00"

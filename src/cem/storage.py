@@ -121,10 +121,20 @@ class Store:
             (new_id(), utc_now(), action, subject, safe_text(reason, 500)),
         )
 
-    def save(self, run: Run, *, trusted_lab=False, demo=False) -> Run:
+    def save(self, run: Run, *, trusted_lab=False, demo=False, pilot_origins=None) -> Run:
         self.writable()
-        run = sanitize_run(run.model_copy(deep=True))
-        run.provenance = "SYNTHETIC_DEMO" if demo else ("COLLECTED_LAB" if trusted_lab else "DECLARED_IMPORT")
+        if pilot_origins and (trusted_lab or demo or run.fixture_id != "PILOT"):
+            raise CEMError("INVALID_INPUT", "Pilot provenance requires a separate pilot collection.")
+        run = sanitize_run(run.model_copy(deep=True), pilot_origins=pilot_origins)
+        run.provenance = (
+            "COLLECTED_PILOT"
+            if pilot_origins
+            else "SYNTHETIC_DEMO"
+            if demo
+            else "COLLECTED_LAB"
+            if trusted_lab
+            else "DECLARED_IMPORT"
+        )
         if len({e.id for e in run.evidence}) != len(run.evidence):
             raise CEMError("INVALID_INPUT", "Evidence IDs must be unique.")
         raw = canonical_bytes(run)
@@ -176,7 +186,8 @@ class Store:
                     "INSERT INTO cookies VALUES(?,?,?)",
                     [(run.id, i, c.model_dump_json()) for i, c in enumerate(run.cookies)],
                 )
-                self.audit(db, "IMPORT" if not trusted_lab else "COLLECT_LAB", run.id, run.provenance)
+                action = "COLLECT_PILOT" if pilot_origins else "COLLECT_LAB" if trusted_lab else "IMPORT"
+                self.audit(db, action, run.id, run.provenance)
             except sqlite3.IntegrityError:
                 raise CEMError(
                     "RECORD_CONFLICT", "A record ID conflicts with existing evidence.", 409
@@ -315,6 +326,20 @@ class Store:
         ids = sorted(set(validate_id(x) for x in run_ids))
         with self.connect() as db:
             baselines = {r[0] for r in db.execute("SELECT run_id FROM baselines")}
+            if db.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='monitor_reviews'"
+            ).fetchone():
+                reviewed = {
+                    value
+                    for row in db.execute("SELECT baseline_id,candidate_id FROM monitor_reviews")
+                    for value in row
+                }
+                if reviewed.intersection(ids):
+                    raise CEMError(
+                        "REVIEW_PROTECTED",
+                        "Runs referenced by review history are retained with their annotations.",
+                        409,
+                    )
         if baselines.intersection(ids):
             raise CEMError("BASELINE_PROTECTED", "Select a replacement baseline first.", 409)
         for id in ids:

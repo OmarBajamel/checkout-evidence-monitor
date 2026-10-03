@@ -124,7 +124,8 @@
         },
         "authentication": {
           "enum": [
-            "SYNTHETIC_GUEST"
+            "SYNTHETIC_GUEST",
+            "PUBLIC_GUEST"
           ],
           "default": "SYNTHETIC_GUEST"
         },
@@ -760,7 +761,7 @@
         },
         "fixture_id": {
           "type": "string",
-          "pattern": "^T(0[1-9]|1[0-9]|2[0-4])$"
+          "pattern": "^(T(0[1-9]|1[0-9]|2[0-4])|PILOT)$"
         },
         "profile": {
           "$ref": "#/$defs/Profile"
@@ -806,6 +807,7 @@
         "provenance": {
           "enum": [
             "COLLECTED_LAB",
+            "COLLECTED_PILOT",
             "DECLARED_IMPORT",
             "SYNTHETIC_DEMO"
           ],

@@ -1,4 +1,8 @@
-# Threat model and intended boundaries
+# Current V1.1 threat-model amendment
+
+The original OFFLINE/LAB boundary below remains applicable to that adapter. The new externally connected PILOT uses a separate image and wrapper; its threat model, mandatory controls and residual limits are in [PILOT_SECURITY.md](PILOT_SECURITY.md). The old statement that there is no public adapter is historical. New queue/configuration/review writes use bounded typed JSON, same-origin bearer protection and SQLite transactions. Grants are local operator attestations, not authenticated authority. Runtime enforcement and recovery have not yet been verified for this source.
+
+## Historical V1.0 boundary
 
 Assets: local sanitized evidence, local identity key, API session token, output integrity, host filesystem and approved target scope. Trust boundaries: operator-supplied JSON → strict parser; fixture/browser → capture → sanitization; filesystem → SQLite/artifact verification; web origin → loopback API; private workspace → public export.
 

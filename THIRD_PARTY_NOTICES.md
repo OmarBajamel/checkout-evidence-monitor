@@ -243,6 +243,12 @@ Names, versions and hashes below are derived from exact installed package metada
 - typing-inspection 0.4.4 — MIT; [pypi-typing-inspection-0.4.4-LICENSE](licenses/pypi-typing-inspection-0.4.4-LICENSE)
 - uvicorn 0.53.0 — BSD-3-Clause; [pypi-uvicorn-0.53.0-LICENSE.md](licenses/pypi-uvicorn-0.53.0-LICENSE.md)
 
+## Signal integration, September 2026
+
+Signal's published design concepts adapt component foundations from the **Material 3 Design Kit by Google** ([source](https://www.figma.com/community/file/1035203688168086460/material-3-design-kit)). Layout, colors, typography and icon placement were adapted for this project. Figma's free Community file terms require attribution under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); see [Figma's licensing policy](https://help.figma.com/hc/en-us/articles/360042296374-Figma-Community-copyright-and-licensing). The two composite concept images retain that upstream attribution; original brand marks and editorial illustrations remain MIT. No Google endorsement, complete UI-kit distribution or font-software redistribution is claimed.
+
+Signal brand vectors reuse the owner's approved original Figma exports; no new template assets or third-party icon/font dependencies were added. UI icons continue to use Lucide under the existing ISC notice. Space Grotesk, Manrope and IBM Plex Mono are CSS family preferences with system fallbacks only; no font binary was copied or redistributed. The locally adapted shadcn/Radix primitives retain the notices above.
+
 ## Shared upstream package notices
 
 Radix compose-refs shares the WorkOS MIT notice retained from react-slot. esbuild, Oxc parser and Rolldown platform bindings share the notices of their parent packages. Some Storybook, docgen and oxc-resolver packages omit individual license files; their MIT notices were retrieved at the resolved upstream commits below, consistent with installed license metadata. Exact package release-tag correspondence was not established. These tools are development dependencies; their binaries and node_modules are not redistributed. DEPENDENCIES.json maps all installed packages to retained notices.

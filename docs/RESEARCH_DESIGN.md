@@ -1,4 +1,6 @@
-# Research rationale and local synthetic evaluation
+# Historical research rationale and synthetic evaluation
+
+The measured results below belong to v0.1.0 on September 24, 2026. The current alpha adds a [prespecified evaluation protocol](EVALUATION_V1_1.md); no new participant or experiment outcome is claimed.
 
 The implementation question is whether configured journey context helps reviewers explain observed checkout differences without overstating visibility. It is not a claim of new malware detection, complete compliance automation or universal store support. Browser-measurement research informed the distinction between a document, a reference, a request, a response and execution.
 

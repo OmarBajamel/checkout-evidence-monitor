@@ -1,7 +1,30 @@
-# Security and responsible use
+# Security policy and responsible use
 
-This prototype supports OFFLINE review and an isolated synthetic LAB, with bounded local verification documented in [the verification record](docs/TESTING_STATUS.md). It does not support or authorize real-store scanning. Do not enter real credentials, payment details, customer records or secrets. Do not disable sandbox, network-none, TLS, Host/Origin or session checks to obtain a successful run.
+[English documentation](docs/README.md) · [التوثيق العربي](README.ar.md)
 
-Do not file a public issue containing a secret, raw customer evidence or an exploitable target. No monitored security mailbox or response SLA is advertised. If GitHub private vulnerability reporting is explicitly enabled on the published repository, use that channel; otherwise arrange a private contact route with the owner before sharing sensitive details. No private reporting feature is claimed to be enabled by this local package.
+## Report a vulnerability privately
 
-Review [the threat model](docs/THREAT_MODEL.md). Container isolation and redaction reduce exposure but are not demonstrated security guarantees. Editable local approval files cannot authenticate intent against a person who controls the filesystem. Hashes detect stored-byte inconsistency, not server authenticity or an adversary who rewrites both data and hashes.
+Use [GitHub private vulnerability reporting](https://github.com/OmarBajamel/checkout-evidence-monitor/security/advisories/new) for security-sensitive findings. Do not include customer records, live access tokens, bootstrap URLs or unnecessary exploitable-target details. A minimal synthetic reproduction and affected version are preferable.
+
+No monitored email address, response-time commitment or support SLA is advertised. If the private-report form is unavailable, open a non-sensitive issue asking for a private reporting route; withhold vulnerability details until a channel is agreed.
+
+للبلاغات الأمنية الحساسة استخدم الرابط الخاص أعلاه. لا تنشر بيانات العملاء أو رموز الوصول أو تفاصيل استغلال في بلاغ عام. يمكن كتابة البلاغ بالعربية أو الإنجليزية.
+
+## Version status
+
+| Version | Security/verification posture |
+|---|---|
+| 0.2.0 alpha | Experimental; static/build review only; runtime and new PILOT controls pending validation |
+| v0.1.0-prototype | Historical bounded local verification; no ongoing security-maintenance guarantee |
+
+Neither version is certified, production-hardened or a substitute for a security assessment.
+
+## Authorized use and boundaries
+
+OFFLINE reviews records. LAB runs only shipped synthetic fixtures in network-none isolation. Experimental PILOT supports a separately authorized, bounded public guest journey using an isolated browser and allowlisted proxy; it does not authorize arbitrary scanning.
+
+Do not enter real credentials, payment details or customer datasets. Never disable sandbox, TLS, Host/Origin, session, gateway or scope checks for compatibility. GET/HEAD restrictions cannot guarantee that a remote endpoint has no side effects; exact scope review remains necessary.
+
+Read the [threat model](docs/THREAT_MODEL.md), [pilot controls](docs/PILOT_SECURITY.md) and [limitations](docs/LIMITATIONS.md). Local approval records are editable workflow aids, not identity proof. Artifact hashes detect stored-byte inconsistency, not server authenticity or an attacker who can rewrite both data and hashes.
+
+The public repository excludes private grants, records, browser profiles and raw capture histories. Publication does not start collection, deploy a service or dispatch CI.

@@ -1,0 +1,178 @@
+{
+  "scope": "V1.1-dual-purpose.1",
+  "method": "AST inventory, not pytest discovery",
+  "parameterized_cases_not_expanded": true,
+  "cases": [
+    {
+      "id": "V11-001",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_origin_rejects_ambiguous_or_nonpublic_configuration",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-002",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_egress_address_rejection",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-003",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_public_addresses_are_eligible_but_never_dialed",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-004",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_request_scope_is_fail_closed",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-005",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_navigation_and_approved_resource_queries_are_distinct",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-006",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_renewal_preserves_comparability_but_scope_change_does_not",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-007",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_forbids_input_actions_and_unconfirmed_state",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-008",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_dns_rebinding_mixed_answers_rejected_before_socket",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-009",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_proxy_needs_auth_and_refuses_unlisted_authority_before_dns",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-010",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_runtime_cannot_reuse_offline_lab_session",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-011",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_import_cannot_claim_collected_provenance",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-012",
+      "path": "tests/security/test_pilot_boundaries.py",
+      "function": "test_pilot_sanitization_masks_paths_nonces_and_arbitrary_integrity",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-013",
+      "path": "tests/security/test_pilot_isolation.py",
+      "function": "test_pilot_inspection_refuses_each_weakened_boundary",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-014",
+      "path": "tests/security/test_pilot_isolation.py",
+      "function": "test_remote_engine_override_is_refused_before_docker",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-015",
+      "path": "tests/security/test_pilot_isolation.py",
+      "function": "test_scope_fingerprint_is_independent_of_operator_label",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-016",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_target_save_is_paused_and_reading_never_queues",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-017",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_run_once_is_deduplicated_and_cross_worker_lease_is_exclusive",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-018",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_missed_cadence_is_coalesced_and_disclosed",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-019",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_restart_keeps_interruption_and_recovers_no_fake_success",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-020",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_cleanup_failure_pauses_target_and_remains_recoverable",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-021",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_review_annotations_preserve_evidence_and_protect_retention",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-022",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_notification_dedup_does_not_reopen_acknowledged_identical_difference",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-023",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_retention_refuses_stale_preview_and_never_deletes_unread",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-024",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_new_api_writes_require_origin_and_cannot_run_without_worker",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-025",
+      "path": "tests/integration/test_operations.py",
+      "function": "test_pilot_scope_context_survives_operational_retention",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-026",
+      "path": "tests/ui/test_monitoring.py",
+      "function": "test_guided_setup_saves_paused_without_network_collection",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-027",
+      "path": "tests/ui/test_monitoring.py",
+      "function": "test_review_decision_and_export_keep_pair_context",
+      "status": "AUTHORED_NOT_EXECUTED"
+    },
+    {
+      "id": "V11-028",
+      "path": "tests/ui/test_monitoring.py",
+      "function": "test_operational_views_reflow_and_keep_four_primary_destinations",
+      "status": "AUTHORED_NOT_EXECUTED"
+    }
+  ],
+  "network_runtime_plan": "docs/EVALUATION_V1_1.md",
+  "legacy_catalog": "tests/TEST_CATALOG.json",
+  "legacy_results_apply_only_to_historical_source": true
+}

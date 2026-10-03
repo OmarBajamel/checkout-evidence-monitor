@@ -1,0 +1,75 @@
+{
+  "license": "Original brand artwork MIT; adapted Material 3 components in concept images retain CC BY 4.0 attribution; Lucide icons retain ISC terms. See README.md and ../../THIRD_PARTY_NOTICES.md.",
+  "files": [
+    {
+      "path": "mark.svg",
+      "sha256": "48175b0a2df996c29e05ae26379384ddefefce86a62aadd2f59a0a0aad2f7ab5",
+      "bytes": 552,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "mark.png",
+      "sha256": "da3634881cbf82d2634987ed2d5ee3298d4a0b80623c2a3da8e84163cae909b3",
+      "bytes": 6511,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "lockup.svg",
+      "sha256": "d1596280a84635f1f3cdca1026659ac15630b072e5e1a3c3fc9d35bb37423f84",
+      "bytes": 12288,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "lockup.png",
+      "sha256": "bd9010d1dd209e75fe56df326b60f6d400f725ac8413a7fa0adfaa9f275314a5",
+      "bytes": 16976,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "readme-hero.svg",
+      "sha256": "94ffef6ad2ed28c433ad83db3f9b0004767d07558c965127eaa95d1e15929700",
+      "bytes": 157686,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "readme-hero.png",
+      "sha256": "3cc4e3e274826fc2eb02ef0889a27e0819abf8a5ba89af1d84ab0b21fbe65553",
+      "bytes": 50094,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "github-social.svg",
+      "sha256": "7d8ebccd8132fca9c10faa7d57169a67dfa1f79d9d74b92a4bf37494d0fd5df0",
+      "bytes": 105003,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "github-social.png",
+      "sha256": "1b3dbed4fe5dbd9ee012c8488ddac983aa06795ea8c154845c19e5405d9ebc3d",
+      "bytes": 33254,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "ORIGINAL_BRAND_ILLUSTRATION"
+    },
+    {
+      "path": "assessments-concept.png",
+      "sha256": "1ae8daa17b3e913411e9501578cd80b6f6443f7e231cfa9d7017ffa52495380a",
+      "bytes": 116361,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "DESIGN_CONCEPT_SYNTHETIC_FIXTURES"
+    },
+    {
+      "path": "changes-concept.png",
+      "sha256": "04be8120dd874edc61e885caef061ada235220c3daecdb7e37a180d19ee5fbd8",
+      "bytes": 130740,
+      "provenance": "Original Signal 03 Figma export, September 29 2026",
+      "kind": "DESIGN_CONCEPT_SYNTHETIC_FIXTURES"
+    }
+  ]
+}

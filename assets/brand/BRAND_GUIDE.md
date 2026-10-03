@@ -1,3 +1,7 @@
+# Historical v0.1.0 identity
+
+Retained for the previous release. The current identity is [Signal](../signal/README.md); this guide is not the alpha design authority.
+
 # Checkout Evidence Monitor identity
 
 The mark is an original stepped journey entering an open evidence frame. Its opening expresses incomplete observation; the final square is a recorded point, not a certification seal. Descriptor: “See the change. Follow the evidence.” No trademark clearance or external endorsement is claimed.

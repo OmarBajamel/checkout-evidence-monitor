@@ -89,11 +89,55 @@ def csp_inventory(values: dict) -> list[dict]:
     return policies[:20]
 
 
-def sanitize_evidence(e: Evidence) -> Evidence:
+def pilot_headers(values: dict, origins: list[str]) -> dict[str, str]:
+    """Retain policy structure, removing nonce values and unapproved source URL detail."""
+    result = headers(values)
+    for name, value in list(result.items()):
+        if name.startswith("content-security-policy"):
+            parts = []
+            for directive in value.split(";")[:40]:
+                tokens = directive.strip().split()
+                if not tokens or not re.fullmatch(r"[a-z][a-z0-9-]*", tokens[0]):
+                    continue
+                kept = [tokens[0]]
+                for token in tokens[1:40]:
+                    if token.startswith("'nonce-"):
+                        kept.append("'nonce-[redacted]'")
+                    elif token.startswith(("http://", "https://")):
+                        from .pilot.policy import display_url
+
+                        kept.append(display_url(token, origins)[1] or "[redacted-source]")
+                    elif re.fullmatch(
+                        r"'(?:self|none|unsafe-inline|unsafe-eval|strict-dynamic|report-sample|unsafe-hashes|wasm-unsafe-eval)'|[*]|[a-z]+:|[0-9]+|'sha(?:256|384|512)-[A-Za-z0-9+/=]+'",
+                        token,
+                    ):
+                        kept.append(token)
+                    else:
+                        kept.append("[redacted-source]")
+                parts.append(" ".join(kept))
+            result[name] = "; ".join(parts)[:2048]
+        elif name == "strict-transport-security":
+            result[name] = "; ".join(
+                p.strip()
+                for p in value.split(";")
+                if re.fullmatch(r"(?i)(max-age=[0-9]{1,16}|includesubdomains|preload)", p.strip())
+            )
+        elif name in (
+            "content-type",
+            "content-encoding",
+            "x-content-type-options",
+            "referrer-policy",
+            "x-frame-options",
+        ):
+            result[name] = value if re.fullmatch(r"[A-Za-z0-9/;= ,._-]{1,120}", value) else "[redacted]"
+    return result
+
+
+def sanitize_evidence(e: Evidence, url_sanitizer=safe_url) -> Evidence:
     d = e.model_dump()
-    d["url_display"], d["origin"] = safe_url(e.url_display)
+    d["url_display"], d["origin"] = url_sanitizer(e.url_display)
     if e.redirected_from:
-        d["redirected_from"] = safe_url(e.redirected_from)[0]
+        d["redirected_from"] = url_sanitizer(e.redirected_from)[0]
     d["headers"] = headers(e.headers)
     d["csp"] = csp_inventory(d["headers"])
     d["content_type"] = safe_text(e.content_type, 120)
@@ -106,10 +150,26 @@ def sanitize_evidence(e: Evidence) -> Evidence:
     return Evidence.model_validate(d)
 
 
-def sanitize_run(run: Run) -> Run:
+def sanitize_run(run: Run, *, pilot_origins: list[str] | None = None) -> Run:
+    # Only the inspected collection wrapper supplies these trusted origins, never imported artifacts.
+    sanitizer = safe_url
+    if pilot_origins:
+        from .pilot.policy import display_url
+
+        def sanitizer(value):
+            return display_url(value, pilot_origins)
+
     d = run.model_dump(mode="json")
     d["label"] = safe_text(run.label, 100)
-    d["evidence"] = [sanitize_evidence(e).model_dump(mode="json") for e in run.evidence]
+    d["evidence"] = [sanitize_evidence(e, sanitizer).model_dump(mode="json") for e in run.evidence]
+    if pilot_origins:
+        for e in d["evidence"]:
+            e["headers"] = pilot_headers(e["headers"], pilot_origins)
+            e["csp"] = csp_inventory(e["headers"])
+            if e["integrity_metadata"] and not re.fullmatch(
+                r"(?:sha(?:256|384|512)-[A-Za-z0-9+/=]+ ?)+", e["integrity_metadata"]
+            ):
+                e["integrity_metadata"] = "[redacted]"
     for step in d["journey"]:
         step["value"] = "[redacted]" if step["value"] is not None else None
         step["selector"] = step["selector"] if step["selector"] in SELECTORS else None
@@ -132,10 +192,11 @@ def sanitize_run(run: Run) -> Run:
         d["profile"][field] = safe_text(d["profile"][field], 80)
     for c in d["cookies"]:
         c["name"] = safe_text(c["name"], 80)
-        c["domain"] = c["domain"] if c["domain"].lstrip(".") in HOSTS else "[redacted]"
+        permitted_hosts = {urlsplit(o).hostname for o in pilot_origins} if pilot_origins else HOSTS
+        c["domain"] = c["domain"] if c["domain"].lstrip(".") in permitted_hosts else "[redacted]"
         c["path"] = c["path"] if SAFE_PATH.fullmatch(c["path"]) else "/[redacted-path]"
     for f in d["frames"]:
-        f["origin"] = safe_url(f["origin"] + "/")[1] if f["origin"] else ""
+        f["origin"] = sanitizer(f["origin"] + "/")[1] if f["origin"] else ""
         f["id"] = safe_text(f["id"], 80)
         f["parent_id"] = safe_text(f["parent_id"], 80) if f["parent_id"] else None
     if d["grant"]:

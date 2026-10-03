@@ -1,0 +1,18 @@
+import {useState} from 'react';
+import {Check,Download,MessageSquareText} from 'lucide-react';
+import {request,useResource} from '../api/client';
+import {dateTime,type Reviews} from '../api/operations';
+import {Button} from './ui/button';
+import {Notice,ResourceState,Status} from './common';
+
+export default function ReviewPanel({baseline,candidate}:{baseline:string;candidate:string}){
+ const r=useResource<Reviews>('/api/v1/reviews?baseline='+baseline+'&candidate='+candidate);
+ const [decision,setDecision]=useState('INVESTIGATE'),[reason,setReason]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState(''),[feedback,setFeedback]=useState('');
+ async function save(){setBusy(true);setError('');setFeedback('');try{await request('/api/v1/reviews',undefined,{baseline_id:baseline,candidate_id:candidate,decision,reason});setReason('');setFeedback('Decision added to the review history. The original observations are unchanged.');r.retry();}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function download(){setBusy(true);setError('');try{const value=await request('/api/v1/reviews/export?baseline='+baseline+'&candidate='+candidate);const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='cem-review-'+candidate+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);setFeedback('Review bundle prepared for download.');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ return <section className="review-panel surface" aria-label="Review decisions"><div className="section-heading"><div><span className="eyebrow">Human interpretation</span><h2><MessageSquareText size={20}/> Record the next step.</h2></div><Button variant="outline" disabled={busy} onClick={download}><Download size={16}/>Export review</Button></div><p className="muted">Decisions are append-only annotations linked to this pair. They do not certify safety or modify captured evidence.</p>
+ <ResourceState {...r}>{r.data&&<><div className="review-form"><label className="field"><span>Decision</span><select disabled={r.data.demo} value={decision} onChange={e=>setDecision(e.target.value)}><option value="INVESTIGATE">Investigate</option><option value="EXPECTED">Expected change</option><option value="DEFERRED">Defer with context</option><option value="REVIEWED">Reviewed</option></select></label><label className="field"><span>Reason · 3–500 characters</span><textarea disabled={r.data.demo} value={reason} onChange={e=>setReason(e.target.value)} minLength={3} maxLength={500} placeholder="Explain what you reviewed and what should happen next."/></label></div><Button disabled={busy||r.data.demo||reason.trim().length<3} onClick={save}><Check size={16}/>{busy?'Working…':'Record decision'}</Button>
+ {r.data.demo&&<p className="muted">Review writes are unavailable in the read-only synthetic demo.</p>}
+ <div className="review-history"><h3>Review history · {r.data.total}</h3>{!r.data.total?<p className="muted">No decision recorded for this pair.</p>:r.data.items.map(item=><article key={item.id}><div className="inline-meta"><Status value={item.decision}/><time>{dateTime(item.at)}</time><span>Local operator</span></div><p>{item.reason}</p></article>)}{r.data.total>100&&<p className="muted">Showing the latest 100 decisions. Export includes the full retained pair history.</p>}</div></>}</ResourceState>
+ {error&&<Notice title="Review action failed" tone="danger"><p>{error}</p></Notice>}{feedback&&<p className="feedback" role="status">{feedback}</p>}</section>;
+}

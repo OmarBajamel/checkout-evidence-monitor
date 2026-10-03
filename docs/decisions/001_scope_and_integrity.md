@@ -1,3 +1,7 @@
+# Historical ADR — original v0.1.0 boundary
+
+Retained as the decision for the isolated synthetic adapter. The current independent public PILOT amendment is [ADR 002](002_bounded_pilot.md); this does not remove LAB isolation.
+
 # Decision: bounded source, explicit unknowns
 
 Adopt OFFLINE and isolated synthetic LAB only for V1. Refuse AUTHORIZED_PUBLIC before network resolution. Keep container isolation and nonroot browser sandbox mandatory. This avoids presenting route interception as a production egress guarantee.

@@ -1,4 +1,6 @@
-# Measured synthetic evaluation
+# Historical measured synthetic evaluation — v0.1.0
+
+These September 24 results do not validate the 0.2.0 alpha source or its public PILOT adapter. See the [current protocol](EVALUATION_V1_1.md).
 
 On 2026-09-24, 16 purpose-built scenarios × 3 observation arms × 3 repetitions produced 144 candidate runs, plus 9 baselines. All 153 attempts executed: 132 completed and 21 partial, with no failed, cancelled or unexecuted attempts. A partial observation records a visibility limit; it is not a failed test assertion.
 

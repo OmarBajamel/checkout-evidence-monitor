@@ -70,7 +70,7 @@ class Profile(StrictModel):
     viewport: tuple[int, int] = (1440, 900)
     locale: Literal["en-US"] = "en-US"
     consent: Literal["DECLINED", "ACCEPTED", "UNSET"] = "DECLINED"
-    authentication: Literal["SYNTHETIC_GUEST"] = "SYNTHETIC_GUEST"
+    authentication: Literal["SYNTHETIC_GUEST", "PUBLIC_GUEST"] = "SYNTHETIC_GUEST"
     service_workers: Literal["block", "allow"] = "block"
     cache: Literal["disabled-fresh"] = "disabled-fresh"
     collector_version: str = COLLECTOR_VERSION
@@ -191,14 +191,16 @@ class Run(StrictModel):
     schema_version: Literal["1.0"] = "1.0"
     id: str = Field(default_factory=new_id, pattern=r"^[a-f0-9]{32}$")
     label: str = Field(max_length=100)
-    fixture_id: str = Field(pattern=r"^T(0[1-9]|1[0-9]|2[0-4])$")
+    fixture_id: str = Field(pattern=r"^(T(0[1-9]|1[0-9]|2[0-4])|PILOT)$")
     profile: Profile
     grant: Grant | None = None
     journey: list[Step] = Field(default_factory=list, max_length=40)
     started_at: str = Field(default_factory=utc_now)
     ended_at: str | None = None
     status: RunStatus = RunStatus.PARTIAL
-    provenance: Literal["COLLECTED_LAB", "DECLARED_IMPORT", "SYNTHETIC_DEMO"] = "DECLARED_IMPORT"
+    provenance: Literal["COLLECTED_LAB", "COLLECTED_PILOT", "DECLARED_IMPORT", "SYNTHETIC_DEMO"] = (
+        "DECLARED_IMPORT"
+    )
     steps: list[StepResult] = Field(default_factory=list, max_length=40)
     frames: list[FrameRecord] = Field(default_factory=list, max_length=100)
     cookies: list[CookieRecord] = Field(default_factory=list, max_length=100)

@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PilotConfig",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Static authored contract. Backend additionally enforces public origins, action/path restrictions, unique IDs, grant chronology/max 8h and scope membership.",
+  "properties": {
+    "target_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{1,64}$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "origin": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "cadence_minutes": {
+      "type": "integer",
+      "minimum": 15,
+      "maximum": 1440,
+      "default": 60
+    },
+    "consent": {
+      "const": "UNSET",
+      "default": "UNSET"
+    },
+    "budgets": {
+      "$ref": "run.schema.json#/$defs/Budgets"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "action",
+          "expected_state"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]{1,40}$"
+          },
+          "action": {
+            "enum": [
+              "goto",
+              "wait",
+              "assert",
+              "stop"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 160
+          },
+          "selector": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 160
+          },
+          "value": {
+            "type": "null"
+          },
+          "expected_state": {
+            "enum": [
+              "catalog",
+              "cart",
+              "checkout",
+              "stopped"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "action": {
+                  "const": "goto"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "path"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "pattern": "^/[A-Za-z0-9/_-]{0,159}$"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "path": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "action": {
+                  "const": "stop"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "expected_state": {
+                  "const": "stopped"
+                },
+                "selector": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "required": [
+                "selector"
+              ],
+              "properties": {
+                "selector": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "expected_state": {
+                  "enum": [
+                    "catalog",
+                    "cart",
+                    "checkout"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "grant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "owner",
+        "assessor",
+        "origins",
+        "issued_at",
+        "expires_at",
+        "authority_confirmed",
+        "no_payment_or_account_actions"
+      ],
+      "properties": {
+        "owner": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "assessor": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "origins": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          }
+        },
+        "issued_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "purpose": {
+          "const": "AUTHORIZED_PUBLIC_STORE_OBSERVATION",
+          "default": "AUTHORIZED_PUBLIC_STORE_OBSERVATION"
+        },
+        "authority_confirmed": {
+          "const": true
+        },
+        "no_payment_or_account_actions": {
+          "const": true
+        }
+      }
+    }
+  },
+  "required": [
+    "target_id",
+    "label",
+    "origin",
+    "grant",
+    "steps"
+  ]
+}

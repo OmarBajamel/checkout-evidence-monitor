@@ -51,8 +51,19 @@ def snapshot(root):
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--instruction", required=True, choices=["TEST APPROVED"])
-    a.add_argument("--profile", choices=["OFFLINE", "LAB", "OFFLINE_AND_LAB"], default="OFFLINE_AND_LAB")
+    a.add_argument(
+        "--profile", choices=["OFFLINE", "LAB", "OFFLINE_AND_LAB", "PILOT"], default="OFFLINE_AND_LAB"
+    )
+    a.add_argument(
+        "--pilot-boundary-accepted",
+        action="store_true",
+        help="Explicitly accept the reviewed PILOT egress/sandbox boundary; grants remain separate.",
+    )
     opts = a.parse_args()
+    if opts.profile == "PILOT" and not opts.pilot_boundary_accepted:
+        raise SystemExit(
+            "Review docs/PILOT_SECURITY.md and accept the pilot boundary explicitly. This does not authorize a merchant."
+        )
     r = Path.cwd()
     original = r / "state/APPROVAL_RECORD.json"
     if (
@@ -67,6 +78,7 @@ def main():
         "profile": opts.profile,
         "expires_at": (datetime.now(timezone.utc) + timedelta(hours=4)).isoformat(),
         "source_snapshot": snapshot(r),
+        "pilot_boundary_accepted": bool(opts.profile == "PILOT" and opts.pilot_boundary_accepted),
     }
     fd = os.open(out, os.O_CREAT | os.O_TRUNC | os.O_WRONLY, 0o600)
     with os.fdopen(fd, "w", encoding="utf-8") as f:

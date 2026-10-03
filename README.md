@@ -1,60 +1,111 @@
+<p align="center">
+  <img src="assets/signal/readme-hero.png" alt="Checkout Evidence Monitor — See the change. Follow the evidence." width="100%">
+</p>
+
 # Checkout Evidence Monitor
 
-![See the change. Follow the evidence. Local tests documented; synthetic fixtures only.](assets/readme/readme-hero.png)
+**A local workbench for understanding what changed in a configured checkout journey.**
 
-A local workbench for reviewing changes across configured checkout observations. Start with two comparable visits, inspect the evidence behind each difference, and keep missing evidence visible.
+English · [العربية](README.ar.md)
 
-**Status: TESTED_PASS_LOCAL — 73 listed pytest cases passed and 153 synthetic benchmark attempts executed, including 21 partial observations.** Local checks do not establish production readiness or compliance. See the [verification record](docs/TESTING_STATUS.md) for exact counts, snapshots and limits.
+[Get started](docs/GETTING_STARTED.md) · [Documentation](docs/README.md) · [Release notes](docs/releases/v0.2.0-alpha.0.md) · [Roadmap](docs/ROADMAP.md)
 
-![Design concept showing change and evidence together, not a runtime screenshot.](assets/concepts/changes-landscape.png)
+> **0.2.0 alpha — implemented; runtime verification pending.** Static analysis, type checking and source builds have passed. The new monitoring, PILOT collector and Signal interface have not yet completed runtime or visual verification. Earlier v0.1.0 results do not validate this version.
 
-## What V1 contains
+## Understand a change before deciding what it means
 
-- Explicit bounded JSON import and an isolated synthetic LAB collector. `AUTHORIZED_PUBLIC` is rejected before DNS or browser launch.
-- Declarative catalog → cart → checkout steps, exact synthetic origins/actions, resource limits and cancellation handling.
-- Same-session CDP script observations; hashes only for eligible completed bodies, with representation and unavailable reasons. Raw bodies and cookie values are not retained.
-- SQLite persistence, sanitized-artifact integrity, reasoned baseline selection, profile-aware differences and twelve deterministic observation rules.
-- Eight partial ASVS 5.0.0 relationships, PCI DSS manual context, offline HTML/JSON/CSV reports, and a protected loopback API.
-- Four connected screens: Assessments, Journey, Changes and Evidence. Explicit synthetic demo mode is isolated and read-only.
+CEM helps an authorized store operator compare recorded observations, follow the evidence to its journey context, and document a review decision. A separate synthetic lab supports reproducible research into observation coverage and interpretation.
 
-A new script is not automatically malicious or unapproved. A request is not execution evidence. Standards relationships do not establish compliance, certification or an absence of vulnerabilities. A configured journey is required; this is not universal URL-only checkout coverage.
+**Configure → observe → compare → inspect → record a decision.**
+
+A new script is not automatically malicious. Missing evidence remains unknown. Standards mappings provide context, not a compliance certificate or security verdict.
+
+## What is included
+
+| Capability | What you can inspect or configure |
+|---|---|
+| **Four connected views** | Assessments, Journey, Changes and Evidence, using the local evidence API |
+| **Guided setup** | Exact public origins, permitted paths, visible-state selectors, time-bounded authorization and cadence; saved paused |
+| **Conservative comparison** | Baseline/candidate profiles, response-body hashes, observed headers, cookie attributes and explicit uncertainty |
+| **Local monitoring** | Durable queue, one worker, pause/cancel, interrupted-run recovery, expired grants and missed-window notices |
+| **Review workflow** | Deduplicated in-app inbox, append-only decisions and sanitized review export |
+| **Research tools** | Isolated synthetic LAB, HTTP/PAGE/JOURNEY arms, versioned fixtures and prespecified evaluation protocols |
+
+### Signal interface
+
+![Signal Changes design concept showing a baseline/candidate pair, change categories and side-by-side evidence. Values are synthetic design fixtures.](assets/signal/changes-concept.png)
+
+*Figma design concept with synthetic values. This is not a screenshot of a verified running alpha. See the [design gallery and provenance](docs/DESIGN.md). The application interface is currently English; documentation is available in English and Arabic.*
+
+## Choose the right profile
+
+| Profile | Purpose | Boundary |
+|---|---|---|
+| **OFFLINE** | Review imported or authored synthetic records | No browser collection |
+| **LAB** | Reproduce controlled experiments | Shipped synthetic fixtures inside a network-isolated container |
+| **PILOT — experimental** | Observe specifically authorized public HTTPS pages | Exact origins and navigation paths; fresh guest context; isolated browser and allowlisted proxy |
+
+PILOT accepts GET/HEAD observations and required visible selectors. It does not sign in, fill forms, mutate a cart, create orders or complete payment. Consent remains unset. A configured journey may be necessary, and many real checkout flows are outside this profile.
+
+## Get started
+
+Use **Python 3.12**, **Node 24** and Git. Docker is needed for collection, not for OFFLINE review. No merchant API, cloud account, paid service or LLM is required for the core workbench.
+
+The [setup guide](docs/GETTING_STARTED.md) includes complete Windows and Linux commands, dependency preparation and an explicit OFFLINE demo workflow. The demo contains labelled synthetic records and starts no collection.
+
+For existing users, read the [upgrade notes](docs/UPGRADING.md) before opening an existing evidence store with the alpha.
+
+- [Windows and Linux setup](docs/GETTING_STARTED.md)
+- [Synthetic LAB and CLI reference](docs/RUNBOOK.md)
+- [Pilot configuration and recovery](docs/PILOT_QUICKSTART.md)
+- [Authorization and network boundary](docs/PILOT_SECURITY.md)
 
 ## Architecture
 
-![Isolated LAB or bounded import, sanitization and storage, comparison and protected local review.](assets/readme/architecture.png)
-
-See [architecture](docs/ARCHITECTURE.md), [threat model](docs/THREAT_MODEL.md), [observation rules](docs/OBSERVATIONS.md) and [limitations](docs/LIMITATIONS.md).
-
-## Install and build
-
-The source targets CPython 3.12 (selected 3.12.14), Node 24 (selected 24.19.0), Windows for OFFLINE review, and Linux x64 with a compatible Docker engine for LAB. Windows OFFLINE package and UI checks are documented in the verification record. Linux x64 LAB ran successfully inside Docker Desktop 4.92.0 with engine 29.8.0/WSL2 on the recorded Windows host; other hosts remain unverified. Use a project-local environment and the appropriate binary hash lock. Follow [the runbook](docs/RUNBOOK.md) for exact setup, bootstrap, test permission and synthetic grant steps.
-
-Windows static preparation:
-
-```powershell
-py -3.12 -m venv .venv
-.venv/Scripts/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-win.lock
-cd frontend
-npm ci --ignore-scripts --no-audit --no-fund
-npm run typecheck
-npm run build
-cd ..
-.venv/Scripts/python -m build --no-isolation
-.venv/Scripts/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.1.0-py3-none-any.whl
+```mermaid
+flowchart LR
+    UI["Signal workbench"] --> API["Protected loopback API"]
+    API --> Store["Local evidence + integrity"]
+    API --> Ops["Queue, inbox and reviews"]
+    Ops --> Worker["Explicit local worker"]
+    CLI["Explicit LAB CLI"] --> LAB["Isolated synthetic LAB"]
+    Worker --> Pilot["Experimental PILOT boundary"]
+    Pilot --> Proxy["Exact-origin public-IP proxy"]
+    Proxy --> Scope["Authorized public pages"]
+    LAB --> Store
+    Pilot --> Store
 ```
 
-No script above starts the application or executes its tests. Browser installation/launch, Storybook and fixture execution are separate runtime actions. There are no automatic install or push test hooks.
+The synthetic LAB is launched through the CLI's LAB wrapper; the monitoring worker dispatches PILOT jobs. Both paths share the evidence model. See [architecture](docs/ARCHITECTURE.md) for the detailed boundaries.
 
-## Explicit local use and evaluation
+| Layer | Technology |
+|---|---|
+| Collector, domain and API | Python 3.12, Playwright, FastAPI, Pydantic |
+| Interface | TypeScript, React, Vite, Tailwind, Radix/shadcn primitives, Lucide |
+| Local persistence | SQLite plus sanitized immutable artifacts |
+| Collector isolation | Linux x64 Docker, Chromium sandbox, inspected resource/network controls |
 
-Every CLI entry point, including help, requires an explicit current local test-session record. It is an accidental-execution guard, not proof of human identity. After intentionally authorizing local execution, create a session as described in the runbook, then import a bounded sanitized record or issue a short-lived synthetic LAB grant. The shipped grant example is intentionally expired.
+Generated browser bundles and vendored license material are identified in `.gitattributes`; source languages remain visible without generated-code inflation.
 
-The UI is started explicitly with `cem ui`. It prints a one-use, 60-second bootstrap link to the local terminal and binds only to `127.0.0.1`. The bearer stays in page memory; no collection starts on load. `cem ui --demo` is an explicit authored synthetic example, not measured evidence or a fallback after failure.
+## Verification, with its limits
 
-The optional suite covers core scenarios T01–T24 and API/UI/publication cases T25–T38. Its [catalog](tests/TEST_CATALOG.json) and [evaluation protocol](docs/RESEARCH_DESIGN.md) and [measured synthetic results](docs/EVALUATION_RESULTS.md) include the executed local/LAB checks and the qualified synthetic evaluation. Remote CI uses manual dispatch only and requires separate explicit intent; nothing is dispatched automatically.
+| Evidence | 0.2.0 alpha |
+|---|---|
+| Ruff, TypeScript and audited frontend/package builds | Passed; static/build checks only |
+| New runtime, UI and isolation checks | Pending |
+| Current merchant compatibility or operator study | Not established |
+| Prior synthetic benchmark and local tests | Historical v0.1.0 evidence only |
 
-## Boundaries and attribution
+The [verification record](docs/TESTING_STATUS.md) preserves dates, snapshots and limits. The [evaluation protocol](docs/EVALUATION_V1_1.md) separates synthetic reproduction, pilot controls and operator interpretation. No production readiness, universal store coverage, malware-detection accuracy or standards certification is claimed.
 
-Do not point V1 at a real merchant, payment provider, cloud metadata service or customer dataset. The LAB uses synthetic aliases inside a network-none container; keep Chromium sandboxing, exact-origin checks and TLS verification enabled. See [SECURITY.md](SECURITY.md).
+## Documentation and participation
 
-Original code and artwork are MIT; ASVS-derived relationship data is CC-BY-SA-4.0. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [third-party notices](THIRD_PARTY_NOTICES.md). Development used Codex assistance. Author: Omar Ba Jamel. This repository is a technical prototype, not an assessment service or a published academic result.
+Start with the [documentation index](docs/README.md). [Issues](https://github.com/OmarBajamel/checkout-evidence-monitor/issues) and contributions are welcome in English or Arabic. Include the version, profile and reproducible synthetic example; never upload customer data, session links or credentials.
+
+Read [Contributing](CONTRIBUTING.md), the [security policy](SECURITY.md) and the [roadmap](docs/ROADMAP.md). CI is manual opt-in; publishing a commit does not dispatch tests. This repository is source distribution, not a hosted application.
+
+## License and attribution
+
+Original code and artwork: [MIT](LICENSE). ASVS-derived materials retain their separate attribution and CC-BY-SA-4.0 terms. Dependencies and design foundations retain their own licenses; see [NOTICE](NOTICE), [third-party notices](THIRD_PARTY_NOTICES.md) and [attribution](docs/ATTRIBUTION.md).
+
+Created by **Omar Ba Jamel**, with Codex assistance. Signal artwork is original project work; Lucide icons and upstream component foundations are credited separately.

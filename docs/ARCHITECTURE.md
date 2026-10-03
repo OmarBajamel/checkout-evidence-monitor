@@ -1,4 +1,10 @@
-# Implemented source architecture
+# Current V1.1 architecture amendment
+
+The original evidence engine below is retained. `pilot/policy.py` validates public guest scopes, `pilot/proxy.py` enforces approved hostname/public-IP egress, `pilot/runner.py` controls inspected isolated containers and `pilot/collector.py` captures bounded observations. No LAB rejection is removed. `operations.py` adds namespaced SQLite tables for configuration history, durable jobs, leases, deduplicated notices, append-only reviews and retained run-to-grant context. The readable schema is `migrations/002_monitoring.sql`.
+
+`cem ui` opens only the workbench; `cem ui --monitor` explicitly starts the single local worker after a PILOT runtime gate. New same-origin authenticated typed API routes create paused targets, request actions, acknowledge notices, append reviews and confirm retention. Four Signal destinations use actual local data; setup, monitoring and inbox are within Assessments. Evidence stays immutable. See [security boundary](PILOT_SECURITY.md), [setup](PILOT_QUICKSTART.md) and [current verification](CURRENT_STATUS.md).
+
+## Historical V1.0 architecture
 
 The runtime is separated from build and publication tooling. Python domain/config/authorization services validate declarative jobs. `lab_wrapper.py` owns Docker creation, inspects the stopped configuration, starts only the recorded immutable local image, monitors budgets and imports the result. `lab/entry.py` starts only synthetic loopback fixtures inside network-none and supervises the collector. Public targets are rejected before lookup.
 

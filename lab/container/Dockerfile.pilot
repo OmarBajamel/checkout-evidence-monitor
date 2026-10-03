@@ -1,0 +1,10 @@
+# Independent public pilot image; no fixture CA or synthetic key.
+FROM mcr.microsoft.com/playwright/python:v1.63.0-noble@sha256:72bd171a9ffc2b4b59532aaa6210e21014d07093120dc25528870c0b840da1f0
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 PYTHONPATH=/opt/cem/src HOME=/tmp/cem-home
+WORKDIR /opt/cem
+COPY requirements-linux.lock ./requirements-linux.lock
+COPY wheelhouse/ /wheelhouse/
+RUN python -m pip install --no-index --find-links /wheelhouse --require-hashes --no-compile -r requirements-linux.lock && rm -rf /wheelhouse
+COPY src/cem ./src/cem
+USER 1000:1000
+ENTRYPOINT ["python", "-m", "cem.pilot.entry"]

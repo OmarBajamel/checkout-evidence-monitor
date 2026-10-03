@@ -4,14 +4,24 @@ build-backend = "hatchling.build"
 
 [project]
 name = "checkout-evidence-monitor"
-version = "0.1.0"
-description = "Local, context-aware checkout evidence review with an isolated synthetic lab"
+version = "0.2.0a0"
+description = "Local, context-aware checkout evidence review with synthetic research and a bounded public pilot"
 requires-python = ">=3.12,<3.13"
 license = "MIT"
+readme = "README.public.md"
+authors = [{name = "Omar Ba Jamel"}]
+keywords = ["checkout", "evidence", "playwright", "local-first", "research"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3.12"]
 dependencies = [
   "playwright==1.63.0", "fastapi==0.141.1", "pydantic==2.13.5",
   "uvicorn==0.53.0", "typer==0.27.2", "PyYAML==6.0.3", "Jinja2==3.1.6"
 ]
+
+[project.urls]
+Repository = "https://github.com/OmarBajamel/checkout-evidence-monitor"
+Documentation = "https://github.com/OmarBajamel/checkout-evidence-monitor/blob/main/docs/README.md"
+Issues = "https://github.com/OmarBajamel/checkout-evidence-monitor/issues"
+Changelog = "https://github.com/OmarBajamel/checkout-evidence-monitor/blob/main/CHANGELOG.md"
 
 [project.scripts]
 cem = "cem.cli:main"
@@ -29,6 +39,22 @@ include = ["src/cem", "pyproject.toml", "LICENSE", "NOTICE", "THIRD_PARTY_NOTICE
 exclude = ["/reports/", "/state/", "/research/", "/publication/", "/content/", "/.cem-private/", "/.cem-data/", "/.cem-demo/", "/.build-tools/", "/.venv/", "/.agents/", "/.codex/", "/frontend/node_modules/"]
 
 [tool.hatch.build.targets.sdist.force-include]
+"README.md" = "README.md"
+"README.ar.md" = "README.ar.md"
+"docs/README.md" = "docs/README.md"
+"docs/GETTING_STARTED.md" = "docs/GETTING_STARTED.md"
+"docs/ROADMAP.md" = "docs/ROADMAP.md"
+"docs/UPGRADING.md" = "docs/UPGRADING.md"
+"docs/DESIGN.md" = "docs/DESIGN.md"
+"docs/ar" = "docs/ar"
+"docs/releases" = "docs/releases"
+"docs/decisions/002_bounded_pilot.md" = "docs/decisions/002_bounded_pilot.md"
+"docs/CURRENT_STATUS.md" = "docs/CURRENT_STATUS.md"
+"docs/PILOT_QUICKSTART.md" = "docs/PILOT_QUICKSTART.md"
+"docs/PILOT_SECURITY.md" = "docs/PILOT_SECURITY.md"
+"docs/EVALUATION_V1_1.md" = "docs/EVALUATION_V1_1.md"
+"docs/EVALUATION_RESULTS.md" = "docs/EVALUATION_RESULTS.md"
+"docs/SIGNAL_IMPLEMENTATION.md" = "docs/SIGNAL_IMPLEMENTATION.md"
 "assets" = "assets"
 "SECURITY.md" = "SECURITY.md"
 "CONTRIBUTING.md" = "CONTRIBUTING.md"

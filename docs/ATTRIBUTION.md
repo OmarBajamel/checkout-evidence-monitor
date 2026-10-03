@@ -1,5 +1,7 @@
 # Attribution and source use
 
+Signal design concepts adapt the Material 3 Design Kit by Google. The project changes layout, colors, typography and icon placement; upstream component foundations retain CC BY 4.0 attribution under Figma's free Community terms. See [the full notice and source links](../THIRD_PARTY_NOTICES.md#signal-integration-september-2026). Original Signal brand illustrations remain MIT; composite concepts retain upstream rights.
+
 Original code, UI composition, identity and editorial artwork: Omar Ba Jamel, with Codex assistance. The small shadcn Button adaptation retains its upstream MIT terms. Lucide/Radix/React and every installed locked dependency retain source notices in licenses/. The complete inventory is DEPENDENCIES.json; see THIRD_PARTY_NOTICES.md.
 
 The Playwright-derived seccomp profile is Apache-2.0. ASVS-derived relationship data is CC-BY-SA-4.0 with exact version/source and modification notice. PCI/ISO proprietary text and insignia are not reproduced. Upstream research repositories were reviewed as references, not copied wholesale. No environment font binaries, third-party screenshots or customer material are distributed.

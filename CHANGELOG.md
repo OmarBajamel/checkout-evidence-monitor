@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0a0 / v0.2.0-alpha.0 — 2026-10-03
+
+Alpha source release with runtime verification pending. Added complete English/Arabic onboarding, Signal repository artwork, upgrade/roadmap/design documentation, community templates and accurate generated-file language attributes.
+
+Integrated Signal 03 into the four-screen workbench. Added a guided paused-target setup, an independent navigation-only public PILOT collector, a durable local worker with recovery/cadence controls, an in-app inbox, and append-only review decisions/export. Added explicit pilot scope/egress boundaries, authored regression/security/UI tests and prespecified research/operator protocols.
+
+No new runtime tests, browser previews, real-store observations, participant study or publication occurred during implementation. Publication distributes the current source as an explicitly unverified alpha. Prior results below remain historical.
+
 ## 0.1.0-prototype — locally tested prerelease
 
 Authored the isolated synthetic collector, conservative comparison and rule services, sanitized SQLite evidence store, local API and four-screen workbench. Added original identity assets, public documentation, opt-in tests, fixtures and experiment adapters.

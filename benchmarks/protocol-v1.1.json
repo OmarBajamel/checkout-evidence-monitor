@@ -1,0 +1,39 @@
+{
+  "version": "cem-eval-1.1",
+  "status": "AUTHORED_NOT_EXECUTED",
+  "legacy_results_snapshot": "90ebe7dce0175b1c75eb5e3b8441c3add5d0f0bb7c1432fb7d931b1fbc842d96",
+  "synthetic": {
+    "entrypoint": "benchmarks.run",
+    "arms": [
+      "HTTP",
+      "PAGE",
+      "JOURNEY"
+    ],
+    "repetitions": 3,
+    "seed": 20260924,
+    "ground_truth": "lab/ground-truth.json",
+    "applicability": "benchmarks/applicability.csv",
+    "denominator_policy": "Retain failed/partial attempts; use capability-specific eligibility, never treat missing evidence as a negative."
+  },
+  "pilot_controls": [
+    "P01_scope",
+    "P02_dns",
+    "P03_proxy",
+    "P04_network",
+    "P05_scheduling",
+    "P06_recovery",
+    "P07_expiry",
+    "P08_redaction",
+    "P09_retention",
+    "P10_runtime_gate"
+  ],
+  "operator_study": {
+    "status": "PLANNED_NO_PARTICIPANTS",
+    "target_sample_range": [
+      5,
+      8
+    ],
+    "protocol": "docs/EVALUATION_V1_1.md",
+    "result_template": "benchmarks/operator-results.template.csv"
+  }
+}

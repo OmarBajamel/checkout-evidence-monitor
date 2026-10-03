@@ -1,8 +1,10 @@
 # Operator and build runbook
 
-## Supported intent and current status
+For the local V1.1 / 0.2.0a0 increment, begin with [PILOT_QUICKSTART.md](PILOT_QUICKSTART.md). New implementation is awaiting runtime verification. The tested status and LAB-only procedures below describe the earlier snapshot unless explicitly reused in that quickstart.
 
-Runtime verification is TESTED_PASS_LOCAL for the listed assertions; see TESTING_STATUS.md for exact source provenance, carry-forward checks and limits. Selected runtimes: Python 3.12.14; Node 24.19.0; Playwright 1.63.0 / Chromium 153.0.8010.12 revision 1243. Windows OFFLINE and Linux x64 Docker LAB are intended targets. Do not infer other-platform compatibility. No global install is required.
+## Environment and historical verification
+
+Historical v0.1.0 runtime verification was TESTED_PASS_LOCAL for the listed assertions; the current alpha is unverified. see TESTING_STATUS.md for exact source provenance, carry-forward checks and limits. Selected runtimes: Python 3.12.14; Node 24.19.0; Playwright 1.63.0 / Chromium 153.0.8010.12 revision 1243. Windows OFFLINE and Linux x64 Docker LAB are intended targets. Do not infer other-platform compatibility. No global install is required.
 
 Use README static preparation on Windows. On Linux, create `.venv` with Python 3.12 and substitute `.venv/bin/python` and `requirements-dev-linux.lock`. Install binary wheels with `--only-binary=:all: --require-hashes --no-compile`; install the built CEM wheel with `--no-deps`. The Windows and Linux transitive locks intentionally differ in greenlet because wheel availability differs; each is exact and hashed. npm lifecycle scripts are disabled in `.npmrc` and command arguments. Do not run esbuild's postinstall fallback downloader manually.
 

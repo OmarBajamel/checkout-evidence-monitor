@@ -9,8 +9,14 @@ from ..privacy import safe_url, headers, identity, safe_text
 
 
 class Capture:
-    def __init__(self, run: Run, key: bytes):
+    def __init__(self, run: Run, key: bytes, *, url_sanitizer=safe_url, primary_origin=None):
         self.run, self.key = run, key
+        self.safe_url = url_sanitizer
+        self.primary_origins = (
+            (primary_origin,)
+            if primary_origin
+            else ("http://shop.cem.test:8765", "https://shop.cem.test:8765")
+        )
         self.step_id = "initial"
         self.state = "catalog"
         self.pending = {}
@@ -25,6 +31,8 @@ class Capture:
             self.run.limitation_codes.append(code)
 
     def state_for(self, url):
+        if self.run.fixture_id == "PILOT":
+            return self.state
         path = urlsplit(url).path
         return path.strip("/") if path in ("/cart", "/checkout", "/catalog") else self.state
 
@@ -52,7 +60,7 @@ class Capture:
             return
         r = event["request"]
         url = r["url"]
-        display, origin = safe_url(url)
+        display, origin = self.safe_url(url)
         kind = (
             "SCRIPT"
             if event.get("type") == "Script"
@@ -74,9 +82,7 @@ class Capture:
             request_observed=True,
             method=safe_text(r.get("method", "GET"), 12),
             delivery="ATTEMPTED",
-            relation="SAME_ORIGIN"
-            if origin in ("http://shop.cem.test:8765", "https://shop.cem.test:8765")
-            else "CROSS_ORIGIN",
+            relation="SAME_ORIGIN" if origin in self.primary_origins else "CROSS_ORIGIN",
         )
         if event.get("redirectResponse"):
             # Redirect destination still passes the route allowlist. Store only sanitized predecessor.
@@ -191,7 +197,7 @@ class Capture:
     async def dom_inventory(self, page):
         for i, frame in enumerate(page.frames[:100]):
             fid = "main" if i == 0 else f"frame-{i}"
-            _, origin = safe_url(frame.url)
+            _, origin = self.safe_url(frame.url)
             if not any(f.id == fid for f in self.run.frames):
                 self.run.frames.append(
                     FrameRecord(
@@ -222,7 +228,7 @@ class Capture:
                         found.reference_observed = True
                         found.integrity_metadata = safe_text(ref["integrity"], 512) or None
                         continue
-                    display, ref_origin = safe_url(url) if url else ("", origin)
+                    display, ref_origin = self.safe_url(url) if url else ("", origin)
                     e = Evidence(
                         kind="SCRIPT" if ref["external"] else "INLINE_METADATA",
                         step_id=self.step_id,

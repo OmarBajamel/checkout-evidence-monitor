@@ -1,0 +1,14 @@
+# Normalize source text; preserve binary artwork.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.pdf binary
+
+# These are compiled browser bundles, not hand-authored source.
+src/cem/web/** linguist-generated=true
+frontend/package-lock.json linguist-generated=true
+
+# Upstream license copies are vendored material, not project source.
+licenses/** linguist-vendored=true -text

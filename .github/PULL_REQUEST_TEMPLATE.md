@@ -1,3 +1,18 @@
-Describe the problem and resulting behavior. Identify affected scope and evidence limitations.
+## Problem and resulting behavior
 
-Verification: list actual static/runtime checks and source snapshot; label unexecuted tests honestly. Confirm retained sandbox/scope/privacy controls and source notices. Do not attach private evidence or introduce automatic remote CI, hosting or publication steps.
+Describe the concrete trigger and what changes for the user.
+
+## Verification
+
+- Source/version:
+- Static checks actually run:
+- Runtime/profile checks actually run (or explicitly not run):
+- Remaining limitations:
+
+## Review checklist
+
+- [ ] Scope, privacy and isolation boundaries are preserved.
+- [ ] Relevant assertions and English/Arabic documentation are updated.
+- [ ] No secrets, customer records, bootstrap links or private histories are included.
+- [ ] Partial/unknown results and concept images remain accurately labelled.
+- [ ] Dependencies and copied materials retain their licenses.

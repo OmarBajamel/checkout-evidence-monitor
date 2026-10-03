@@ -1,6 +1,8 @@
 # Local verification status
 
-Overall outcome: **TESTED_PASS_LOCAL** as of 2026-09-24, for the bounded OFFLINE_AND_LAB profile and listed assertions. The synthetic LAB collector and three-arm benchmark executed. This is not exhaustive acceptance, production readiness, real-store compatibility or standards compliance.
+Current local V1.1 / 0.2.0a0 source is **IMPLEMENTED_NOT_TESTED**. The results below are historical and do not validate the new increment. Read [current status](CURRENT_STATUS.md) and [the pilot quickstart](PILOT_QUICKSTART.md).
+
+Historical v0.1.0 outcome: **TESTED_PASS_LOCAL** as of 2026-09-24, for the bounded OFFLINE_AND_LAB profile and listed assertions. The synthetic LAB collector and three-arm benchmark executed. This is not exhaustive acceptance, production readiness, real-store compatibility or standards compliance.
 
 Source snapshot: `90ebe7dce0175b1c75eb5e3b8441c3add5d0f0bb7c1432fb7d931b1fbc842d96`.
 

@@ -1,8 +1,9 @@
-"""Protected same-origin local workbench. There is deliberately no scan route."""
+"""Protected same-origin local workbench and explicit bounded monitoring controls."""
 
 from pathlib import Path
 from dataclasses import dataclass, field
 from threading import Lock
+from contextlib import asynccontextmanager
 import secrets
 import time
 import mimetypes
@@ -16,6 +17,8 @@ from .storage import Store, reject_symlink_chain
 from .comparison import compare
 from .rules import evaluate
 from .reports import render
+from .operations import Operations, TargetAction, ReviewDecision
+from .pilot.policy import PilotConfig
 
 CSP = "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
 
@@ -69,13 +72,37 @@ class BaselineSelection(StrictModel):
     reason: str = Field(min_length=3, max_length=500)
 
 
-def create_app(store: Store, session: Session, port=8760, assets: Path | None = None) -> FastAPI:
+class RetentionConfirmation(StrictModel):
+    confirmation: str = Field(pattern=r"^[a-f0-9]{64}$")
+
+
+def create_app(
+    store: Store, session: Session, port=8760, assets: Path | None = None, *, monitor_root: Path | None = None
+) -> FastAPI:
     if not 1024 <= port <= 65535:
         raise CEMError("INVALID_INPUT", "Choose an unprivileged local port.")
     origin = f"http://127.0.0.1:{port}"
     expected_host = f"127.0.0.1:{port}"
     assets = assets or Path(__file__).parent / "web"
-    app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
+    operations = Operations(store)
+
+    @asynccontextmanager
+    async def lifespan(_app):
+        worker = None
+        if monitor_root is not None:
+            from .monitor import Worker
+
+            if store.read_only:
+                raise CEMError("READ_ONLY_DEMO", "Demo cannot start a pilot runner.", 403)
+            worker = Worker(operations, monitor_root)
+            worker.start()
+        try:
+            yield
+        finally:
+            if worker:
+                worker.stop()
+
+    app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
 
     def error(code, message, status):
         return JSONResponse({"error": {"code": code, "message": message}}, status_code=status)
@@ -187,6 +214,7 @@ def create_app(store: Store, session: Session, port=8760, assets: Path | None = 
             "complete_states": run.complete_states,
             "limitation_codes": run.limitation_codes,
             "provenance": run.provenance,
+            "pilot_context": operations.run_context(run_id),
         }
 
     @app.get("/api/v1/comparisons")
@@ -214,6 +242,46 @@ def create_app(store: Store, session: Session, port=8760, assets: Path | None = 
         return Response(
             raw, media_type=mime, headers={"Content-Disposition": f'attachment; filename="{filename}"'}
         )
+
+    @app.get("/api/v1/operations")
+    def operation_status():
+        return operations.snapshot()
+
+    @app.post("/api/v1/targets")
+    def save_target(body: PilotConfig):
+        return operations.save_target(body)
+
+    @app.get("/api/v1/targets/{target_id}")
+    def target_config(target_id: str):
+        return operations.config(target_id)
+
+    @app.post("/api/v1/targets/{target_id}/actions")
+    def target_action(target_id: str, body: TargetAction):
+        return operations.action(target_id, body.action)
+
+    @app.post("/api/v1/notifications/{notice_id}/read")
+    def read_notice(notice_id: str):
+        return operations.acknowledge(notice_id)
+
+    @app.get("/api/v1/reviews")
+    def review_history(baseline: str, candidate: str):
+        return operations.reviews(baseline, candidate)
+
+    @app.post("/api/v1/reviews")
+    def record_review(body: ReviewDecision):
+        return operations.review(body)
+
+    @app.get("/api/v1/reviews/export")
+    def export_reviews(baseline: str, candidate: str):
+        return operations.export_reviews(baseline, candidate)
+
+    @app.get("/api/v1/operations/retention")
+    def monitor_retention():
+        return operations.retention_preview()
+
+    @app.post("/api/v1/operations/retention")
+    def monitor_retention_apply(body: RetentionConfirmation):
+        return operations.retention_apply(body.confirmation)
 
     @app.get("/{path:path}")
     def static(path: str):
