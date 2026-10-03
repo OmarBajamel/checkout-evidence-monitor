@@ -6,9 +6,9 @@
 
 **A local workbench for understanding what changed in a configured checkout journey.**
 
-English · [العربية](README.ar.md)
+English · [العربية](README.ar.md) · [Deutsch](README.de.md)
 
-[Get started](docs/GETTING_STARTED.md) · [Documentation](docs/README.md) · [Release notes](docs/releases/v0.2.0-alpha.0.md) · [Roadmap](docs/ROADMAP.md)
+[Get started](docs/GETTING_STARTED.md) · [Documentation](docs/README.md) · [Release notes](docs/releases/v0.2.0-alpha.1.md) · [Roadmap](docs/ROADMAP.md)
 
 > **0.2.0 alpha — implemented; runtime verification pending.** Static analysis, type checking and source builds have passed. The new monitoring, PILOT collector and Signal interface have not yet completed runtime or visual verification. Earlier v0.1.0 results do not validate this version.
 
@@ -35,7 +35,7 @@ A new script is not automatically malicious. Missing evidence remains unknown. S
 
 ![Signal Changes design concept showing a baseline/candidate pair, change categories and side-by-side evidence. Values are synthetic design fixtures.](assets/signal/changes-concept.png)
 
-*Figma design concept with synthetic values. This is not a screenshot of a verified running alpha. See the [design gallery and provenance](docs/DESIGN.md). The application interface is currently English; documentation is available in English and Arabic.*
+*Figma design concept with synthetic values. This is not a screenshot of a verified running alpha. See the [design gallery and provenance](docs/DESIGN.md). The application interface is currently English; documentation is available in English, Arabic and German.*
 
 ## Choose the right profile
 
@@ -100,7 +100,7 @@ The [verification record](docs/TESTING_STATUS.md) preserves dates, snapshots and
 
 ## Documentation and participation
 
-Start with the [documentation index](docs/README.md). [Issues](https://github.com/OmarBajamel/checkout-evidence-monitor/issues) and contributions are welcome in English or Arabic. Include the version, profile and reproducible synthetic example; never upload customer data, session links or credentials.
+Start with the [documentation index](docs/README.md). [Issues](https://github.com/OmarBajamel/checkout-evidence-monitor/issues) and contributions are welcome in English, Arabic or German. Include the version, profile and reproducible synthetic example; never upload customer data, session links or credentials.
 
 Read [Contributing](CONTRIBUTING.md), the [security policy](SECURITY.md) and the [roadmap](docs/ROADMAP.md). CI is manual opt-in; publishing a commit does not dispatch tests. This repository is source distribution, not a hosted application.
 
@@ -108,4 +108,4 @@ Read [Contributing](CONTRIBUTING.md), the [security policy](SECURITY.md) and the
 
 Original code and artwork: [MIT](LICENSE). ASVS-derived materials retain their separate attribution and CC-BY-SA-4.0 terms. Dependencies and design foundations retain their own licenses; see [NOTICE](NOTICE), [third-party notices](THIRD_PARTY_NOTICES.md) and [attribution](docs/ATTRIBUTION.md).
 
-Created by **Omar Ba Jamel**, with Codex assistance. Signal artwork is original project work; Lucide icons and upstream component foundations are credited separately.
+Created by **Omar Ba Jamel**. Signal artwork is original project work; Lucide icons and upstream component foundations are credited separately.

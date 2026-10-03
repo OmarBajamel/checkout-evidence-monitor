@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping make evidence review clearer and more reproducible. Issues and pull requests may be written in **English or Arabic**. Keep code identifiers, API contracts and canonical technical documentation in English; maintain corresponding Arabic guidance when its meaning changes.
+Thank you for helping make evidence review clearer and more reproducible. Issues and pull requests may be written in **English, Arabic or German**. Keep code identifiers, API contracts and canonical technical documentation in English; maintain corresponding Arabic and German guidance when its meaning changes.
 
 ## Start with a concrete problem
 
@@ -34,7 +34,7 @@ PILOT staging requires its own accepted boundary and named time-bounded scope. N
 
 ## Language, accessibility and data
 
-- Keep English and Arabic capability/status claims aligned. Arabic documentation does not imply Arabic UI support.
+- Keep English, Arabic and German capability/status claims aligned. Translated documentation does not imply a translated application interface.
 - Preserve keyboard access, names, focus, reduced motion, responsive layouts and explicit uncertainty; report what was actually checked.
 - Never contribute credentials, customer evidence, browser profiles, host font binaries or private orchestration records.
 - Retain licenses, ASVS attribution and visible concept labels. Dependency additions need reviewed provenance and lock updates.

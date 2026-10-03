@@ -36,7 +36,7 @@ research/SCOPE_LOCK.json
 research/CLAIM_AUDIT.csv
 research/V2_MIGRATION_REVIEW.md
 .agents/
-.codex/
+.c*/
 .research-cache/
 playwright-report/
 test-results/

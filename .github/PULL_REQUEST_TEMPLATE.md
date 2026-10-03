@@ -12,7 +12,7 @@ Describe the concrete trigger and what changes for the user.
 ## Review checklist
 
 - [ ] Scope, privacy and isolation boundaries are preserved.
-- [ ] Relevant assertions and English/Arabic documentation are updated.
+- [ ] Relevant assertions and English/Arabic/German documentation are updated.
 - [ ] No secrets, customer records, bootstrap links or private histories are included.
 - [ ] Partial/unknown results and concept images remain accurately labelled.
 - [ ] Dependencies and copied materials retain their licenses.

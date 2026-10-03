@@ -1,6 +1,6 @@
 # Security policy and responsible use
 
-[English documentation](docs/README.md) · [التوثيق العربي](README.ar.md)
+[English documentation](docs/README.md) · [التوثيق العربي](README.ar.md) · [Deutsche Dokumentation](README.de.md)
 
 ## Report a vulnerability privately
 

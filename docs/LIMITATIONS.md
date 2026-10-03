@@ -1,6 +1,6 @@
 # Current V1.1 limits — runtime verification pending
 
-This source increment (0.2.0a0) adds a navigation-only public PILOT adapter, Signal UI, durable local monitoring and review history. Its new security controls, UI behavior, fresh installation and complete operator workflow have not been run. The earlier results below apply only to the September 24 source. See [current status](CURRENT_STATUS.md) and [pilot boundary](PILOT_SECURITY.md).
+This source increment (0.2.0a1) adds a navigation-only public PILOT adapter, Signal UI, durable local monitoring and review history. Its new security controls, UI behavior, fresh installation and complete operator workflow have not been run. The earlier results below apply only to the September 24 source. See [current status](CURRENT_STATUS.md) and [pilot boundary](PILOT_SECURITY.md).
 
 The new pilot supports only explicitly authorized public HTTPS pages, required visible selectors and GET/HEAD observations in a fresh guest context. It cannot complete sign-in, cart mutation, orders or payment. Its output is kernel-bounded tmpfs, unlike the historical LAB output bind described below. Browser/daemon/kernel trust, limited frame visibility, remote GET side effects, missing ground truth and unknown evidence remain material limits. No users have participated in the new task study, and no real store has been assessed.
 

@@ -1,6 +1,6 @@
 # Getting started
 
-[Documentation](README.md) · [العربية](ar/GETTING_STARTED.md)
+[Documentation](README.md) · [العربية](ar/GETTING_STARTED.md) · [Deutsch](de/GETTING_STARTED.md)
 
 **0.2.0 alpha:** these are authored setup procedures. A fresh installation and runtime session have not yet been verified for this version. The source builds were checked; that is a different claim.
 
@@ -23,7 +23,7 @@ Keep the repository on a local writable filesystem. Do not place credentials or 
 ```powershell
 git clone https://github.com/OmarBajamel/checkout-evidence-monitor.git
 cd checkout-evidence-monitor
-git switch --detach v0.2.0-alpha.0
+git switch --detach v0.2.0-alpha.1
 py -3.12 -m venv .venv
 .venv/Scripts/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-win.lock
 Set-Location frontend
@@ -32,7 +32,7 @@ npm run typecheck
 npm run build
 Set-Location ..
 .venv/Scripts/python -m build --no-isolation
-.venv/Scripts/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a0-py3-none-any.whl
+.venv/Scripts/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a1-py3-none-any.whl
 ```
 
 ### Linux / Bash
@@ -40,7 +40,7 @@ Set-Location ..
 ```bash
 git clone https://github.com/OmarBajamel/checkout-evidence-monitor.git
 cd checkout-evidence-monitor
-git switch --detach v0.2.0-alpha.0
+git switch --detach v0.2.0-alpha.1
 python3.12 -m venv .venv
 .venv/bin/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-linux.lock
 cd frontend
@@ -49,7 +49,7 @@ npm run typecheck
 npm run build
 cd ..
 .venv/bin/python -m build --no-isolation
-.venv/bin/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a0-py3-none-any.whl
+.venv/bin/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a1-py3-none-any.whl
 ```
 
 These commands install dependencies and build source. They do not start CEM. Installation on other systems is unverified; do not bypass a missing hash or unsupported wheel. Release source ZIP users can extract the archive and begin at the virtual-environment step.

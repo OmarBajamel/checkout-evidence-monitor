@@ -1,6 +1,6 @@
 ---
 name: Documentation or translation / التوثيق والترجمة
-about: Improve accuracy, setup instructions, terminology or English/Arabic consistency
+about: Improve accuracy, setup instructions, terminology or English/Arabic/German consistency
 title: "[Docs] "
 labels: ""
 assignees: ""

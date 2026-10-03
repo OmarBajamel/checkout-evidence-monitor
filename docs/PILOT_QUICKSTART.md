@@ -1,4 +1,4 @@
-# Guided local pilot — V1.1 / 0.2.0a0
+# Guided local pilot — V1.1 / 0.2.0a1
 This increment is implemented in source and is awaiting runtime verification. The published v0.1.0 prototype and its September 24 results describe the earlier synthetic-only version.
 
 ## 1. Prepare the local workspace

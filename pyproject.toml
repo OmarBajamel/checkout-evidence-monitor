@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "checkout-evidence-monitor"
-version = "0.2.0a0"
+version = "0.2.0a1"
 description = "Local, context-aware checkout evidence review with synthetic research and a bounded public pilot"
 requires-python = ">=3.12,<3.13"
 license = "MIT"
@@ -36,17 +36,19 @@ packages = ["src/cem"]
 
 [tool.hatch.build.targets.sdist]
 include = ["src/cem", "pyproject.toml", "LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md", "DEPENDENCIES.json", "licenses", "README.public.md", "requirements*.lock", "frontend/src", "frontend/public", "frontend/package*.json", "frontend/tsconfig.json", "frontend/vite.config.ts", "frontend/index.html", "frontend/.npmrc", "frontend/.storybook", "lab", "schemas", "migrations", "tools", "tests", "benchmarks", "examples"]
-exclude = ["/reports/", "/state/", "/research/", "/publication/", "/content/", "/.cem-private/", "/.cem-data/", "/.cem-demo/", "/.build-tools/", "/.venv/", "/.agents/", "/.codex/", "/frontend/node_modules/"]
+exclude = ["/reports/", "/state/", "/research/", "/publication/", "/content/", "/.cem-private/", "/.cem-data/", "/.cem-demo/", "/.build-tools/", "/.venv/", "/.agents/", "/.c*/", "/frontend/node_modules/"]
 
 [tool.hatch.build.targets.sdist.force-include]
 "README.md" = "README.md"
 "README.ar.md" = "README.ar.md"
+"README.de.md" = "README.de.md"
 "docs/README.md" = "docs/README.md"
 "docs/GETTING_STARTED.md" = "docs/GETTING_STARTED.md"
 "docs/ROADMAP.md" = "docs/ROADMAP.md"
 "docs/UPGRADING.md" = "docs/UPGRADING.md"
 "docs/DESIGN.md" = "docs/DESIGN.md"
 "docs/ar" = "docs/ar"
+"docs/de" = "docs/de"
 "docs/releases" = "docs/releases"
 "docs/decisions/002_bounded_pilot.md" = "docs/decisions/002_bounded_pilot.md"
 "docs/CURRENT_STATUS.md" = "docs/CURRENT_STATUS.md"

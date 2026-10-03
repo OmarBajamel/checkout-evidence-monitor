@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "version": "ASVS-5.0.0-subset-1",
   "source_sha": "5cf9b032440be53ce345ab3c130fda46ba1ce7a2",
-  "license": "CC-BY-SA-4.0 for the ASVS-derived relationship data; original explanatory changes by Omar Ba Jamel with Codex assistance",
+  "license": "CC-BY-SA-4.0 for the ASVS-derived relationship data; original explanatory changes by Omar Ba Jamel",
   "relationships": [
     {
       "standard": "OWASP ASVS 5.0.0",

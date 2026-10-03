@@ -6,7 +6,7 @@ labels: ""
 assignees: ""
 ---
 
-English and Arabic are welcome. For a security-sensitive report, use SECURITY.md.
+English, Arabic and German are welcome. For a security-sensitive report, use SECURITY.md.
 
 ### Version and environment
 Release/commit:

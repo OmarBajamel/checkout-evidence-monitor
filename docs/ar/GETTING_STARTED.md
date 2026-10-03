@@ -1,6 +1,6 @@
 # الإعداد والتشغيل المحلي
 
-[English](../GETTING_STARTED.md) · [الرئيسية بالعربية](../../README.ar.md)
+[English](../GETTING_STARTED.md) · [Deutsch](../de/GETTING_STARTED.md) · [الرئيسية بالعربية](../../README.ar.md)
 
 **النسخة 0.2.0 أولية:** نجحت فحوص المصدر والبناء، لكن خطوات التثبيت الجديد والتشغيل العملي لهذه النسخة لم تُتحقق بعد. لا تعني الأوامر المنشورة أن التطبيق قد اجتاز الاختبارات التشغيلية.
 
@@ -17,7 +17,7 @@
 ```powershell
 git clone https://github.com/OmarBajamel/checkout-evidence-monitor.git
 cd checkout-evidence-monitor
-git switch --detach v0.2.0-alpha.0
+git switch --detach v0.2.0-alpha.1
 py -3.12 -m venv .venv
 .venv/Scripts/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-win.lock
 Set-Location frontend
@@ -26,7 +26,7 @@ npm run typecheck
 npm run build
 Set-Location ..
 .venv/Scripts/python -m build --no-isolation
-.venv/Scripts/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a0-py3-none-any.whl
+.venv/Scripts/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a1-py3-none-any.whl
 ```
 
 ### Linux باستخدام Bash
@@ -34,7 +34,7 @@ Set-Location ..
 ```bash
 git clone https://github.com/OmarBajamel/checkout-evidence-monitor.git
 cd checkout-evidence-monitor
-git switch --detach v0.2.0-alpha.0
+git switch --detach v0.2.0-alpha.1
 python3.12 -m venv .venv
 .venv/bin/python -m pip install --only-binary=:all: --require-hashes --no-compile -r requirements-dev-linux.lock
 cd frontend
@@ -43,7 +43,7 @@ npm run typecheck
 npm run build
 cd ..
 .venv/bin/python -m build --no-isolation
-.venv/bin/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a0-py3-none-any.whl
+.venv/bin/python -m pip install --no-deps --no-compile dist/checkout_evidence_monitor-0.2.0a1-py3-none-any.whl
 ```
 
 هذه الأوامر تجهز التبعيات وتبني الحزمة؛ لا تشغّل التطبيق. إذا نزّلت أرشيف المصدر، فكّه وابدأ من إنشاء البيئة الافتراضية. لا تحذف متطلبات البصمات أو تغيّر حدود الأمان لتجاوز مشكلة توافق.

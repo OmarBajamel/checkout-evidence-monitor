@@ -10,7 +10,6 @@ PRIVATE = {
     "research",
     ".research-cache",
     ".agents",
-    ".codex",
     ".cem-private",
     ".cem-data",
     ".cem-demo",
@@ -36,6 +35,7 @@ def public_path(path):
         p.is_absolute()
         or not p.parts
         or p.parts[0].casefold() in PRIVATE
+        or p.parts[0].casefold().startswith(".c")
         or any(
             x.casefold() in ("..", ".", ".git", "node_modules", "__pycache__")
             or x.casefold().startswith((".env", ".cem-"))

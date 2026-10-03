@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0a1 / v0.2.0-alpha.1 — 2026-10-03
+
+Documentation update: German project overview, Windows/Linux setup, glossary and documentation index; synchronized English/Arabic/German navigation and contribution guidance. Simplified project attribution while retaining third-party notices. Private dot-directory exclusions now cover the configuration/cache family generically. Package metadata and source-distribution includes are updated; runtime and visual verification remain pending.
+
 ## 0.2.0a0 / v0.2.0-alpha.0 — 2026-10-03
 
 Alpha source release with runtime verification pending. Added complete English/Arabic onboarding, Signal repository artwork, upgrade/roadmap/design documentation, community templates and accurate generated-file language attributes.

@@ -1,5 +1,5 @@
 # Current local increment
-Version: V1.1 dual-purpose / package 0.2.0a0. Experimental 0.2.0 alpha release line.
+Version: V1.1 dual-purpose / package 0.2.0a1. Experimental 0.2.0 alpha release line.
 
 The current source contains Signal integration, a guided paused-target setup, a separate bounded PILOT collector, durable local monitoring, an in-app inbox, append-only review history and review export. It retains the synthetic LAB and its research adapters.
 
@@ -20,4 +20,4 @@ This increment is awaiting runtime testing. The September 24 tests, benchmark an
 - [Historical verification](TESTING_STATUS.md)
 - [Signal design gallery](DESIGN.md)
 
-Read the [alpha release notes](releases/v0.2.0-alpha.0.md) for distribution details. Publication status does not establish runtime verification.
+Read the [alpha release notes](releases/v0.2.0-alpha.1.md) for distribution details. Publication status does not establish runtime verification.

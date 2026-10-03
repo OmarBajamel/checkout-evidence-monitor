@@ -1,6 +1,6 @@
 # Operator and build runbook
 
-For the local V1.1 / 0.2.0a0 increment, begin with [PILOT_QUICKSTART.md](PILOT_QUICKSTART.md). New implementation is awaiting runtime verification. The tested status and LAB-only procedures below describe the earlier snapshot unless explicitly reused in that quickstart.
+For the local V1.1 / 0.2.0a1 increment, begin with [PILOT_QUICKSTART.md](PILOT_QUICKSTART.md). New implementation is awaiting runtime verification. The tested status and LAB-only procedures below describe the earlier snapshot unless explicitly reused in that quickstart.
 
 ## Environment and historical verification
 
